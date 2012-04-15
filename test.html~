@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+<canvas id="logo" width="250" height="100"></canvas>
+<script type="text/javascript" >
+var canvas = document.getElementById("logo");
+ 
+function draw(canvas) {
+
+var context = canvas.getContext("2d");
+    context.arc(100, 100, 50, 0, 2 * Math.PI, false);
+        context.fillStyle = "#00ff00";
+        context.fill();
+}
+function drawPlay(canvas) {
+	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(5,5);
+	ctx.lineTo(25,15);
+	ctx.lineTo(5,25);
+	ctx.closePath();
+	
+	var lgt = ctx.createLinearGradient(0,0,30,30);
+	lgt.addColorStop(0,'white');  
+   lgt.addColorStop(1,'black');
+   ctx.fillStyle = "#00ff00";
+	//ctx.fillStyle = lgt;
+   ctx.fill();
+	ctx.stroke();
+}
+
+//draw(canvas);
+drawPlay(canvas);
+
+</script>
+</body>
+</html>

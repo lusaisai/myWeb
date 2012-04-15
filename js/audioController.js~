@@ -1,0 +1,21 @@
+$(function(){
+    var canvas = document.getElementById("audiocontroller");
+    drawPlay(canvas);
+}
+);
+
+function drawPlay(canvas) {
+	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(5,5);
+	ctx.lineTo(25,15);
+	ctx.lineTo(5,25);
+	ctx.closePath();
+	
+	var lgt = ctx.createLinearGradient(0,0,30,30);
+	lgt.addColorStop(0,'white');  
+   lgt.addColorStop(1,'black');
+   ctx.fillStyle = lgt;
+   ctx.fill();
+	ctx.stroke();
+}
