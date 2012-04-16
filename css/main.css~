@@ -2,11 +2,11 @@ body {
 	margin: auto;
 	padding: 10px;
 	color: #333333;
-	background-image: url('../images/bg.jpg');
+	background-image: url('../images/bg.png');
 }
 
 div#main {
-	width: 1200px;
+	width: 1000px;
 	margin: auto;
 	padding: 10px;
 	background-color: #ffffff;
@@ -14,15 +14,16 @@ div#main {
 }
 
 #header,#bdy{
-	width: 1200px;
+	width: 1000px;
 	margin: 0px;
 	padding:10px;
 	height: 120px;
 }
 
 #bdy {
-height: auto;
+height: 100%;
 margin-bottom: 100px;
+overflow: auto;
 }
 
 #bw {
@@ -63,19 +64,37 @@ ul#nav li a {
    opacity: 0.6;
 }
 
-
-#search {
-width: 500px;
-height: 100px;
-float: right;
-background-color: #20DCF5;	
-}
-
-video {
-  box-shadow: 2px 2px 5px 5px #888;
-  margin: 2px;
-}
-
 canvas {
-border:1px solid #aaaaaa;	
+	border:1px solid #aaaaaa;	
+}
+
+#musicPlayer,#topicBox {
+	width: 250px;
+	height: 420px;
+	float: left;
+	padding: 5px
+}
+
+#topicBox {
+	width: 700px;
+	margin-left: 20px;
+	height: 100%;
+}
+
+.albumImage {
+	width: 150px;
+	height: 150px;	
+}
+
+div.topic:hover {
+	background-color: #E6F3FF;	
+}
+
+ul.list li {
+	display: inline-block;
+   background-color: #FFFFCC;
+   padding: 2px;
+}
+ul.list li {
+	cursor:pointer;	
 }

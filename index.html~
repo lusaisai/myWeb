@@ -2,17 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Welcome</title>
+<title>陆赛赛的网络小屋</title>
+<link rel="shortcut icon" href="http://im633.com/favicon.ico">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/navigation.js"></script>
 <script type="text/javascript" src="js/logo.js"></script>
-<script type="text/javascript" src="js/audioController.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
 <link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
 <ul id="nav">
-<li><a href="index.html" >首页</a></li>
+<li><a href="http://im633.com" >首页</a></li>
 <li><a href="#" >音乐</a></li>
 <li><a href="mv.html" >影音</a></li>
 <li><a href="#" >足球</a></li>
@@ -28,10 +29,22 @@
 <h3 id="bw">七月七日长生殿 夜半无人私语时 - 白居易</h3>
 </div>
 
-<hr>
 <div id="bdy">
-<h3>音乐推荐</h3>
-<embed src="http://www.xiami.com/widget/4097932_503679_235_346_000000_dddddd_0/albumPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+<div id="musicPlayer">
+<h3>最近爱上了...</h3>
+<embed src="http://www.xiami.com/widget/4097932_32981,32982,32983,32984,32985,32986,32987,32988,32989,32990,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+</div>
+<div id="topicBox">
+<div id="music1" class="topic">
+<h3>品冠 - 温柔而富有磁性的嗓音</h3>
+<img src="http://img.xiami.com/images/album/img89/389/1711.jpg" class="albumImage">
+<span>最早听的品冠的专辑，当时被杜鹃彻底吸引了</span>
+<ul class="list">
+<li id="list1">疼你的责任</li>
+<li id="list2">U-Turn 180°转弯</li>
+</ul>
+</div>
+</div>
 </div>
 
 </div>
