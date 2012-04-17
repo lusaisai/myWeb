@@ -1,5 +1,14 @@
 $( function() {
 
+$('.list li').mousedown( function() {
+	$(this).css('box-shadow','none');
+	}
+).mouseup( function() {
+	$(this).css('box-shadow','1px 1px 2px 1px #5F9FFF');
+	}
+)
+;
+
 $('#list1').mouseover(function() {
 	$('#music1 img').attr('src', 'http://img.xiami.com/images/album/img89/389/1711.jpg');
 	$('#music1 span').html('最早听的品冠的专辑，当时彻底被杜鹃吸引了');
