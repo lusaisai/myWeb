@@ -23,11 +23,13 @@ files: /home/lusaisai/wwwLearning/myweb0.1/js/player.js
 files: /home/lusaisai/wwwLearning/myweb0.1/mv.html
 files: /home/lusaisai/wwwLearning/myweb0.1/js/logo.js
 files: /home/lusaisai/wwwLearning/myweb0.1/test.html
+files: /home/lusaisai/wwwLearning/myweb0.1/php/getPoem.php
 c2e.convert_iso: 0
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/player.js
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/php/getPoem.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/test.html
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/logo.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/mv.html
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/player.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/index.html
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/css/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/navigation.js
@@ -38,7 +40,6 @@ recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/jquery.jplayer.min.j
 recent_files: file:///home/lusaisai/Downloads/jQuery.jPlayer.2.1.0.demos/demo-01-supplied-mp3-bm.htm
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/circleplayer/index.htm
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/clock.js
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/js/test.js
 snippets_show_as_menu: 1
 show_mbhl: 1
 adv_open_recursive: 0
@@ -75,6 +76,6 @@ charmap_block: 1
 editor_indent_wspaces: 0
 spell_check_default: 1
 fb_show_backup_f: 0
-opendir: file:///home/lusaisai/wwwLearning/myweb0.1/js
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/js
+opendir: file:///home/lusaisai/wwwLearning/myweb0.1/php
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/php
 adv_open_matchname: 0

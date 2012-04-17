@@ -29,6 +29,8 @@ overflow: auto;
 #bw {
 	display: inline-block;
 	float: right;
+	width: 500px;
+	height: auto;
 	font-family: 华文行楷,华文隶书,楷体,隶书,微软雅黑,宋体;
 }
 
