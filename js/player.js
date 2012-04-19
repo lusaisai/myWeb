@@ -15,7 +15,8 @@ $('#list1').mouseover(function() {
 	});
 $('#list1').click(function() {
 	$('#musicPlayer h3').html('疼你的责任');
-	$('#musicPlayer embed').attr('src', 'http://www.xiami.com/widget/4097932_32981,32982,32983,32984,32985,32986,32987,32988,32989,32990,_235_346_000000_494949_0/multiPlayer.swf');
+	$('#musicPlayer embed').remove();
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32981,32982,32983,32984,32985,32986,32987,32988,32989,32990,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	});
 
 $('#list2').mouseover(function() {
@@ -24,7 +25,8 @@ $('#list2').mouseover(function() {
 	});
 $('#list2').click(function() {
 	$('#musicPlayer h3').html('U-Turn 180°转弯');
-	$('#musicPlayer embed').attr('src', 'http://www.xiami.com/widget/4097932_32966,32967,32968,32969,32970,32971,32972,32973,32974,32975,_235_346_000000_494949_0/multiPlayer.swf');
+	$('#musicPlayer embed').remove();
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32966,32967,32968,32969,32970,32971,32972,32973,32974,32975,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	});
 
 }

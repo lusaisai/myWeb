@@ -1,4 +1,9 @@
-﻿body {
+﻿* html #nav { 
+	position: absolute;
+} /* Fixed Positioning in IE6 */
+
+
+body {
 	margin: auto;
 	padding: 10px;
 	color: #333333;
@@ -28,7 +33,15 @@ overflow: auto;
 
 #bw {
 	display: inline-block;
-	float: right;
+	zoom: 1;
+   *display: inline;
+   _height: 80px;
+	margin: auto;
+	padding-left: 150px;
+	padding-top: 10px;
+	width: 450px;
+	height: 100px;
+	vertical-align:top;
 	font-family: 华文行楷,华文隶书,楷体,隶书,微软雅黑,宋体;
 }
 
@@ -70,9 +83,16 @@ canvas {
 
 #musicPlayer,#topicBox {
 	width: 250px;
-	height: 420px;
+	height: 400px;
 	float: left;
 	padding: 5px
+}
+
+#musicPlayer embed{
+	width: 250px;
+	height: 320px;
+	overflow: hidden;
+	border: 1px solid black;
 }
 
 #topicBox {
@@ -89,7 +109,9 @@ canvas {
 div.topic {
 	padding: 2px;
 	padding-left: 10px;
+	padding-bottom: 10px;
 	box-shadow: inset 0 0 10px #000000;
+	margin: 20px 0;
 }
 
 div.topic:hover {
@@ -98,10 +120,13 @@ div.topic:hover {
 
 ul.list li {
    display: inline-block;
+   *display: inline;
    background-color: #99CCFF;
    padding: 2px;
+   margin: 2px;
    cursor: pointer;
    box-shadow: 1px 1px 2px 1px #5F9FFF;
+   list-style: none;
 }
 
 ul.list li:hover {
