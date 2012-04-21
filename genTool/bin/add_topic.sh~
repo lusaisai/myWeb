@@ -1,0 +1,58 @@
+#! /bin/bash -e
+
+######################################################################
+# Initialize the parameters
+######################################################################
+export mysql_host="localhost"
+export mysql_user="myweb"
+export mysql_pass="myweb"
+export mysql_db="myweb01"
+export gen_home_dir="/home/lusaisai/wwwLearning/myweb0.1/genTool"
+export output_dir="$gen_home_dir/output_html"
+export cfg_dir="$gen_home_dir/cfg"
+export sql_dir="$gen_home_dir/sql"
+export tmp_dir="$gen_home_dir/tmp"
+export mysql_connect_str="mysql --host=$mysql_host --user=$mysql_user --password=$mysql_pass --skip-column-names $mysql_db"
+export show_topic_query="select topic_type_id, topic_type_desc from d_topic_type;"
+
+######################################################################
+# Get the topic types
+######################################################################
+$mysql_connect_str --execute="$show_topic_query" > $tmp_dir/all_topics.txt
+while read _index _content
+do
+	topic_array[_index]=$_content
+done < $tmp_dir/all_topics.txt
+
+######################################################################
+# Ask user for input
+######################################################################
+while :
+do
+	echo "Please choose the topic you want to add: "
+	cat $tmp_dir/all_topics.txt
+	read topic_type_id
+	if [ -n "${topic_array[topic_type_id]}" ]; then
+		echo "your choice is ${topic_array[topic_type_id]}"
+		break
+	else
+		echo
+		echo "Sorry, your input is invalid."
+		continue
+	fi
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

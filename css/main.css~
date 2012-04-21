@@ -132,3 +132,9 @@ ul.list li {
 ul.list li:hover {
    background-color: #85ADFF;
 }
+
+.time {
+	float: right;
+	padding: 5px;
+	color: #B8B8FF;	
+}

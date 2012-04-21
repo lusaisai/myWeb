@@ -19,7 +19,8 @@
 <li><a href="#" >足球</a></li>
 <li><a href="#" >有趣</a></li>
 <li><a href="#" >软件</a></li>
-<li><a href="#" >关于我</a></li>
+<li><a href="#" >博客</a></li>
+<li><a href="#" >其他</a></li>
 </ul>
 
 <div id="main">
@@ -46,6 +47,7 @@
 </div>
 <div id="mv2" class="topic">
 <h3>品冠 - 我确定</h3>
+<span class="time">2012-04-20</span>
 <span>很柔情的一首歌</span>
 <embed src="http://player.yinyuetai.com/video/player/396288/v_0.swf" quality="high" width="680" height="480" align="middle"  allowScriptAccess="sameDomain" type="application/x-shockwave-flash" allowFullScreen="True"></embed>
 </div>
@@ -62,7 +64,7 @@
 <div id="mv5" class="topic">
 <h3>那些年,我们一起追的女孩</h3>
 <span>亲爱的 我多么幸运 人海中能够遇见你 亲爱的 我多么盼望 每一天在这里永远永远有家的感觉...</span>
-<embed src="http://player.youku.com/player.php/sid/XMjUzNzQzOTA0/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed>
+<embed src="http://player.youku.com/player.php/sid/XMzU3ODU3NzEy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed>
 </div>
 </div>
 </div>
