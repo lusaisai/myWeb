@@ -1,0 +1,168 @@
+﻿* html #nav { 
+	position: absolute;
+} /* Fixed Positioning in IE6 */
+
+a {
+	text-decoration: none;
+	color: blue;	
+}
+
+body {
+	margin: auto;
+	padding: 10px;
+	color: #333333;
+	background-image: url('../images/bg.png');
+}
+
+div#main {
+	width: 1000px;
+	margin: auto;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+#header,#bdy{
+	width: 1000px;
+	margin: 0px;
+	padding:10px;
+	height: 120px;
+}
+
+#bdy {
+height: 100%;
+margin-bottom: 100px;
+overflow: auto;
+}
+
+#bw {
+	display: inline-block;
+	zoom: 1;
+   *display: inline;
+   _height: 80px;
+	margin: auto;
+	padding-left: 150px;
+	padding-top: 10px;
+	width: 450px;
+	height: 100px;
+	vertical-align:top;
+	font-family: 'Comic Sans MS',华文行楷,华文隶书,楷体,隶书,微软雅黑,宋体;
+}
+
+span.music {
+	display: inline-block;
+	zoom: 1;
+   *display: inline;
+   _height: 80px;
+	margin: auto;
+	width: 500px;
+	height: 100px;
+	vertical-align:top;
+}
+
+#nav {
+	position: fixed;
+   margin: 0px;
+   padding: 0px;
+   top: 50px;
+   left: 0px;
+   list-style: none;
+   z-index:99;
+}
+
+ul#nav li{
+	width: 125px;
+}
+
+ul#nav li a {
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+   display: block;
+   margin-left: -2px;
+   width: 125px;
+   height: 50px;
+   padding-top: 10px;
+   color: #ffffff;
+   background-color: black;
+   background-repeat:no-repeat;
+   background-position:center center;
+   border:1px solid #AFAFAF;
+   border-radius: 0px 10px 10px 0px;
+   opacity: 0.6;
+}
+
+canvas {
+	border:1px solid #aaaaaa;
+}
+
+#musicPlayer,#topicBox {
+	width: 250px;
+	height: 400px;
+	float: left;
+	padding: 5px
+}
+
+#musicPlayer.fixed {
+  position: fixed;
+  top: 0;
+}
+
+#musicPlayer embed{
+	width: 250px;
+	height: 320px;
+	overflow: hidden;
+	border: 1px solid black;
+}
+
+#topicBox {
+	width: 700px;
+	margin-left: 20px;
+	height: 100%;
+	float: right;
+}
+
+.albumImage {
+	width: 150px;
+	height: 150px;
+}
+
+div.topic {
+	padding: 2px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	box-shadow: inset 0 0 10px #000000;
+	margin: 20px 0;
+}
+
+div.topic:hover {
+	background-color: #E6F3FF;
+}
+
+ul.list li,a.pagelinks {
+   display: inline-block;
+   *display: inline;
+   background-color: #99CCFF;
+   padding: 2px;
+   margin: 2px;
+   cursor: pointer;
+   box-shadow: 1px 1px 2px 1px #5F9FFF;
+   list-style: none;
+}
+
+ul.list li:hover,a.pagelinks:hover {
+   background-color: #85ADFF;
+}
+
+a#currentpagelinks {
+	background-color: #FFC2E0;
+}
+
+.time {
+	float: right;
+	padding: 5px;
+	color: #B8B8FF;
+	font-size: small;	
+}
+
+
