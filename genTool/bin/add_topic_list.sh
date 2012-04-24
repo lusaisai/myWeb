@@ -18,11 +18,11 @@ export show_topic_query="select topic_type_id, topic_type_desc from d_topic_type
 ######################################################################
 # Get the topic types
 ######################################################################
-$mysql_connect_str --execute="$show_topic_query" > $tmp_dir/all_topics.txt
+$mysql_connect_str --execute="$show_topic_query" > $tmp_dir/all_topic_types.txt
 while read _index _content
 do
 	topic_array[_index]=$_content
-done < $tmp_dir/all_topics.txt
+done < $tmp_dir/all_topic_types.txt
 
 ######################################################################
 # Ask user for input
@@ -31,7 +31,7 @@ function ask_topic_type {
 while :
 do
 	echo "Please choose the topic you want to add: "
-	cat $tmp_dir/all_topics.txt
+	cat $tmp_dir/all_topic_types.txt
 	read topic_type_id
 	if [ -n "${topic_array[topic_type_id]}" ]; then
 		echo "your choice is ${topic_array[topic_type_id]}"

@@ -7,6 +7,15 @@ a {
 	color: blue;	
 }
 
+a.topicTitle {
+	text-shadow: 1px 1px #FFE0E0;
+}
+
+a.topicTitle:hover {
+	color: #66B166;
+	text-shadow: 1px 1px 1px #FFE0E0;
+}
+
 body {
 	margin: auto;
 	padding: 10px;
@@ -35,19 +44,35 @@ margin-bottom: 100px;
 overflow: auto;
 }
 
-#bw {
+#bwsearch {
 	display: inline-block;
 	zoom: 1;
    *display: inline;
    _height: 80px;
 	margin: auto;
-	padding-left: 150px;
-	padding-top: 10px;
-	width: 450px;
+	padding-left: 10px;
+	padding-top: 1px;
+	width: 550px;
+	height: 100px;
+	vertical-align: top; 
+	font-family: 'Comic Sans MS',华文行楷,华文隶书,楷体,隶书,微软雅黑,宋体;
+}
+
+#bw {
+	margin: 2px 5px 10px 5px;
+}
+
+span.music {
+	display: inline-block;
+	zoom: 1;
+   *display: inline;
+   _height: 80px;
+	margin: auto;
+	width: 500px;
 	height: 100px;
 	vertical-align:top;
-	font-family: 华文行楷,华文隶书,楷体,隶书,微软雅黑,宋体;
 }
+
 
 #nav {
 	position: fixed;
@@ -92,6 +117,11 @@ canvas {
 	padding: 5px
 }
 
+#musicPlayer.fixed {
+  position: fixed;
+  top: 170px;
+}
+
 #musicPlayer embed{
 	width: 250px;
 	height: 320px;
@@ -103,6 +133,7 @@ canvas {
 	width: 700px;
 	margin-left: 20px;
 	height: 100%;
+	float: right;
 }
 
 .albumImage {
@@ -144,7 +175,7 @@ a#currentpagelinks {
 .time {
 	float: right;
 	padding: 5px;
-	color: #B8B8FF;
+	color: #FFC636;
 	font-size: small;	
 }
 

@@ -2,6 +2,10 @@
 	position: absolute;
 } /* Fixed Positioning in IE6 */
 
+a {
+	text-decoration: none;
+	color: black;	
+}
 
 body {
 	margin: auto;
@@ -118,7 +122,7 @@ div.topic:hover {
 	background-color: #E6F3FF;
 }
 
-ul.list li {
+ul.list li,a.pagelinks {
    display: inline-block;
    *display: inline;
    background-color: #99CCFF;
@@ -129,12 +133,19 @@ ul.list li {
    list-style: none;
 }
 
-ul.list li:hover {
+ul.list li:hover,a.pagelinks:hover {
    background-color: #85ADFF;
+}
+
+a#currentpagelinks {
+	background-color: #FFC2E0;
 }
 
 .time {
 	float: right;
 	padding: 5px;
-	color: #B8B8FF;	
+	color: #B8B8FF;
+	font-size: small;	
 }
+
+

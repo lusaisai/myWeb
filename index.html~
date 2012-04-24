@@ -46,8 +46,9 @@
 </ul>
 </div>
 <div id="mv2" class="topic">
-<h3>品冠 - 我确定</h3>
 <span class="time">2012-04-20</span>
+<h3>品冠 - 我确定</h3>
+
 <span>很柔情的一首歌</span>
 <embed src="http://player.yinyuetai.com/video/player/396288/v_0.swf" quality="high" width="680" height="480" align="middle"  allowScriptAccess="sameDomain" type="application/x-shockwave-flash" allowFullScreen="True"></embed>
 </div>
@@ -65,6 +66,14 @@
 <h3>那些年,我们一起追的女孩</h3>
 <span>亲爱的 我多么幸运 人海中能够遇见你 亲爱的 我多么盼望 每一天在这里永远永远有家的感觉...</span>
 <embed src="http://player.youku.com/player.php/sid/XMzU3ODU3NzEy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed>
+</div>
+<div>
+<a id="currentpagelinks" class="pagelinks" href="#" title="click me">1</a>
+<a class="pagelinks" href="#" title="click me">2</a>
+<a class="pagelinks" href="#" title="click me">3</a>
+<a class="pagelinks" href="#" title="click me">4</a>
+<a class="pagelinks" href="#" title="click me">5</a>
+<a class="pagelinks" href="#" title="click me">6</a>
 </div>
 </div>
 </div>
