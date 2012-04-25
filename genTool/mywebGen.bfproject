@@ -21,6 +21,7 @@ files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/logo.js
 c2e.convert_iso: 0
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/mywebGen.bfproject
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/logo.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
@@ -55,8 +56,8 @@ last_filefilter:
 view_main_toolbar: 1
 htmlbar_view: 1
 autoindent: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:11845:\tgen_html_tail >> $output_dir/${page_dir:14485:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:3671:<a href="$domain/soccer" ><h3>$topic_nam:14485:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:12179:\tgen_html_tail >> $output_dir/${page_dir:14809:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4055:<a href="$domain/soccer" ><h3>$topic_nam:14809:
 c2e.convert_special: 0
 editor_tab_width: 3
 view_left_panel: 1
@@ -69,6 +70,6 @@ editor_indent_wspaces: 0
 spell_check_default: 1
 recent_dirs: file:///home/lusaisai/wwwLearning
 fb_show_backup_f: 0
-opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
+opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
 adv_open_matchname: 0
