@@ -22,9 +22,9 @@ files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/logo.js
 c2e.convert_iso: 0
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/logo.js
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/sql/initial_d_topic_type.ins.sql
@@ -55,8 +55,8 @@ last_filefilter:
 view_main_toolbar: 1
 htmlbar_view: 1
 autoindent: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:11825:\tgen_html_tail >> $output_dir/${page_dir:14315:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:3662:<a href="$domain/soccer" ><h3>$topic_nam:14315:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:11833:\tgen_html_tail >> $output_dir/${page_dir:14323:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:3670:<a href="$domain/soccer" ><h3>$topic_nam:14323:
 c2e.convert_special: 0
 editor_tab_width: 3
 view_left_panel: 1
@@ -70,5 +70,5 @@ spell_check_default: 1
 recent_dirs: file:///home/lusaisai/wwwLearning
 fb_show_backup_f: 0
 opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
 adv_open_matchname: 0
