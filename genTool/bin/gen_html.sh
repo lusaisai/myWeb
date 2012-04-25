@@ -73,6 +73,23 @@ $player_js
 $default_music_loc
 </div>
 <div id="topicBox">
+<div id="searchBox">
+<form name="search">
+<input type="search" name="search_word" value="搜索一下吧" maxlength="2048" size="50"/>
+<select>
+<option>全部</option>
+<option>音乐</option>
+<option>影音</option>
+<option>足球</option>
+<option>有趣</option>
+<option>软件</option>
+<option>博客</option>
+<option>其他</option>
+</option>
+</select>
+<input type="submit" name="submit_search" value="搜索" />
+</form>
+</div>
 EOF
 }
 
@@ -431,7 +448,6 @@ cp $cfg_dir/*css $output_css
 # Only generate newly updated topics/lists
 ######################################################################
 echo "Generating html blocks"
-collect_info_query="select count(*) from f_topic;"
 get_topic_seq_query="select
 t.topic_id, greatest(t.modified_ts, l.modified_ts)
 from f_topic t
@@ -441,8 +457,9 @@ where greatest(t.modified_ts, l.modified_ts) >= '$last_extract_value'
 order by 2 desc
 ;
 "
-all_count=$($mysql_connect_str --execute="$collect_info_query")
+
 $mysql_connect_str --execute="$get_topic_seq_query" > $tmp_dir/all_topic_id.txt
+all_count=$(wc -l $tmp_dir/all_topic_id.txt | awk '{print $1}')
 count_index=1
 while [ $count_index -le $all_count ]
 do
@@ -507,7 +524,7 @@ order by 2 desc
 		topic_id=$(sed ''$count_id' !d' $tmp_dir/${page_dir}_topic_id.txt | awk '{print $1}')
 
 
-		if [ -n "$(cat $tmp_dir/topic_$topic_id.js)" ];then
+		if [ -s $tmp_dir/topic_$topic_id.js ];then
 			player_js="$player_js"'<script type="text/javascript" src="'$domain'/js/topic_'$topic_id'.js"></script>'
 			cp $tmp_dir/topic_$topic_id.js $output_js
 		fi
@@ -541,7 +558,7 @@ order by 2 desc
 }
 
 echo "Generating main pages..."
-gen_main_page "首页" ""
+gen_main_page "" ""
 
 echo "Generating music pages..."
 gen_main_page "音乐" "music/"
@@ -552,16 +569,19 @@ gen_main_page "足球" "soccer/"
 echo "Generating mv pages..."
 gen_main_page "影音" "mv/"
 
+
+######################################################################
+# Post Jobs
+######################################################################
+# Update last extract value
+#date +'%F %R:%S' > $last_extract_file
+
+
+
+
+
+
+
+
+
 exit 0
-
-
-
-
-
-
-
-
-
-
-
-

@@ -179,4 +179,14 @@ a#currentpagelinks {
     font-size: small;
 }
 
+#searchBox {
+	text-align: center;	
+	
+}
+
+input[type="search"] {
+	color: #FFCCCC;
+	font-style: italic;
+}
+
 

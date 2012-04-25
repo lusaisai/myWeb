@@ -19,21 +19,4 @@ $(function() {
 	}
 )
 ;
-
- var top = $('#musicPlayer').offset().top - parseFloat($('#musicPlayer').css('marginTop').replace(/auto/, 0));
-  $(window).scroll(function (event) {
-    // what the y position of the scroll is
-    var y = $(this).scrollTop();
-  
-    // whether that's below the form
-    if (y >= top) {
-      // if so, ad the fixed class
-      $('#musicPlayer').addClass('fixed');
-    } else {
-      // otherwise remove it
-      $('#musicPlayer').removeClass('fixed');
-    }
-  });
-
-
 });

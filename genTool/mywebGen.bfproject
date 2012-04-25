@@ -55,8 +55,8 @@ last_filefilter:
 view_main_toolbar: 1
 htmlbar_view: 1
 autoindent: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:11833:\tgen_html_tail >> $output_dir/${page_dir:14323:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:3670:<a href="$domain/soccer" ><h3>$topic_nam:14323:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:11845:\tgen_html_tail >> $output_dir/${page_dir:14485:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:3671:<a href="$domain/soccer" ><h3>$topic_nam:14485:
 c2e.convert_special: 0
 editor_tab_width: 3
 view_left_panel: 1
