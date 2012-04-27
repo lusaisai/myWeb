@@ -1,4 +1,4 @@
-#! /bin/bash -e
+#! /bin/bash -ex
 
 ######################################################################
 # Initialize the parameters
@@ -23,6 +23,8 @@ count_in_onepage=5
 default_page_title="陆赛赛的网络小屋"
 if [[ "$1" == "prod" ]]; then
 	domain="http://im633.com"
+elif [[ "$1" == "qa" ]]; then
+	domain="http://localhost/output_html"
 else
 	domain=$output_dir
 fi
@@ -42,6 +44,7 @@ cat << EOF
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="$domain/js/navigation.js"></script>
 <script type="text/javascript" src="$domain/js/logo.js"></script>
+<script type="text/javascript" src="$domain/js/search_keyword.js"></script>
 <link href="$domain/css/main.css" type="text/css" rel="stylesheet" />
 $player_js
 </head>
@@ -68,15 +71,15 @@ $player_js
 </div>
 
 <div id="bdy">
+<div id="left_panel">
 <div id="musicPlayer">
 <h3>推荐我喜欢的音乐...</h3>
 $default_music_loc
 </div>
-<div id="topicBox">
 <div id="searchBox">
-<form name="search">
-<input type="search" name="search_word" value="搜索一下吧" maxlength="2048" size="50"/>
-<select>
+<form id="searchForm">
+<input type="search" name="search_word" maxlength="2048" size="28"/>
+<select name="search_type">
 <option>全部</option>
 <option>音乐</option>
 <option>影音</option>
@@ -90,6 +93,10 @@ $default_music_loc
 <input type="submit" name="submit_search" value="搜索" />
 </form>
 </div>
+<div id="searchResult">
+</div>
+</div>
+<div id="topicBox">
 EOF
 }
 
@@ -240,6 +247,7 @@ EOF
 function gen_js_head {
 	case $topic_type_desc in
 	'音乐')
+	list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
 cat << EOF
 \$( function() {
 
@@ -278,6 +286,7 @@ EOF
 
 function gen_js_middle {
 if [[ $topic_type_desc == '音乐' ]]; then
+list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
 cat << EOF
 \$('#list$list_id').mouseover(function() {
 	\$('#topic$topic_id img').attr('src', '$list_image_loc');
@@ -440,6 +449,15 @@ echo "Copying common use files"
 cp $cfg_dir/*png $output_img
 cp $cfg_dir/*ico $output_dir
 cp $cfg_dir/*php $output_php
+cp $cfg_dir/searching.php $output_dir 
+cp $cfg_dir/searching.php $output_dir/blog 
+cp $cfg_dir/searching.php $output_dir/fun 
+cp $cfg_dir/searching.php $output_dir/music 
+cp $cfg_dir/searching.php $output_dir/mv 
+cp $cfg_dir/searching.php $output_dir/others 
+cp $cfg_dir/searching.php $output_dir/soccer 
+cp $cfg_dir/searching.php $output_dir/software 
+cp $cfg_dir/searching.php $output_dir/topics  
 cp $cfg_dir/*js $output_js
 cp $cfg_dir/*css $output_css
 
@@ -512,7 +530,7 @@ order by 2 desc
 	mkdir -p $tmp_dir/${page_dir}
 	$mysql_connect_str --execute="$get_topics_query" > $tmp_dir/${page_dir}_topic_id.txt
 	topic_count=$(wc -l $tmp_dir/${page_dir}_topic_id.txt | awk '{print $1}')
-	page_count=$((topic_count/count_in_onepage + 1))
+	page_count=$(((topic_count-1)/count_in_onepage + 1))
 	count_id=1
 	page_index=1
 	player_js=""

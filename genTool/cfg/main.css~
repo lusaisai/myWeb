@@ -50,8 +50,8 @@ overflow: auto;
     *display: inline;
     _height: 80px;
     margin: auto;
-    padding-left: 10px;
-    padding-top: 1px;
+    padding-left: 50px;
+    padding-top: 20px;
     width: 550px;
     height: 100px;
     vertical-align: top;
@@ -110,16 +110,11 @@ canvas {
     border:1px solid #aaaaaa;
 }
 
-#musicPlayer,#topicBox {
-    width: 250px;
-    height: 400px;
-    float: left;
-    padding: 5px
-}
-
-#musicPlayer.fixed {
-  position: fixed;
-  top: 170px;
+#left_panel {
+  width: 250px;
+  height: 100%;
+  float: left;
+  padding: 5px
 }
 
 #musicPlayer embed{
@@ -134,6 +129,7 @@ canvas {
     margin-left: 20px;
     height: 100%;
     float: right;
+	padding: 5px;
 }
 
 .albumImage {
@@ -179,4 +175,7 @@ a#currentpagelinks {
     font-size: small;
 }
 
-
+#searchBox {
+	text-align: center;	
+	margin-top: 25px;
+}

@@ -19,4 +19,11 @@ $(function() {
 	}
 )
 ;
+
+$("input[type=\"search\"]").focus(function(){
+	$(this).css({'font-style': 'normal', 'color' : 'blue' });
+	$(this).val("");
+})
+;
+
 });

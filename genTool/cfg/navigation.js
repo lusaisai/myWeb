@@ -20,13 +20,4 @@ $(function() {
 )
 ;
 
-$("input[type=\"search\"]").focus(function(){
-	$(this).css({'font-style': 'normal', 'color' : 'black' });
-	$(this).val("");
-}).blur(function(){
-	$(this).css({'font-style': 'italic', 'color' : '#FFCCCC' });
-	$(this).val("搜索一下吧");
-})
-;
-
 });

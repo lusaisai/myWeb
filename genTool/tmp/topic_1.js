@@ -7,7 +7,7 @@ $('#list1').mouseover(function() {
 $('#list1').click(function() {
 	$('#musicPlayer h3').html('我心中品冠的TOP10');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_2050315,2050293,32981,2050311,32982,2050310,387802,1770707689,32964,1769832626,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_2050315,2050293,32981,2050311,32982,2050310,387802,1770707689,32964,1769832626,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 
@@ -18,7 +18,7 @@ $('#list2').mouseover(function() {
 $('#list2').click(function() {
 	$('#musicPlayer h3').html('疼你的责任');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32981,32982,32983,32984,32985,32986,32987,32988,32989,32990,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32981,32982,32983,32984,32985,32986,32987,32988,32989,32990,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list3').mouseover(function() {
@@ -28,7 +28,7 @@ $('#list3').mouseover(function() {
 $('#list3').click(function() {
 	$('#musicPlayer h3').html('U-Turn 180°转弯');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32966,32967,32968,32969,32970,32971,32972,32973,32974,32975,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32966,32967,32968,32969,32970,32971,32972,32973,32974,32975,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list4').mouseover(function() {
@@ -38,7 +38,7 @@ $('#list4').mouseover(function() {
 $('#list4').click(function() {
 	$('#musicPlayer h3').html('门没锁');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32956,32957,32958,32959,32960,32961,32962,32963,32964,32965,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32956,32957,32958,32959,32960,32961,32962,32963,32964,32965,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list5').mouseover(function() {
@@ -48,7 +48,7 @@ $('#list5').mouseover(function() {
 $('#list5').click(function() {
 	$('#musicPlayer h3').html('后来的我');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_2050293,2050294,2050295,2050296,2050297,2050298,2050299,2050300,2050301,2050302,2050303,2050304,2050305,2050306,2050307,2050308,2050309,2050310,2050311,2050312,2050313,2050314,2050315,2050316,2050317,2050318,2050319,2050320,2050321,2050322,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_2050293,2050294,2050295,2050296,2050297,2050298,2050299,2050300,2050301,2050302,2050303,2050304,2050305,2050306,2050307,2050308,2050309,2050310,2050311,2050312,2050313,2050314,2050315,2050316,2050317,2050318,2050319,2050320,2050321,2050322,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list6').mouseover(function() {
@@ -58,7 +58,7 @@ $('#list6').mouseover(function() {
 $('#list6').click(function() {
 	$('#musicPlayer h3').html('爱到无可救药');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32905,32906,32907,32908,32909,32910,32911,32912,32913,32914,32915,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_32905,32906,32907,32908,32909,32910,32911,32912,32913,32914,32915,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list7').mouseover(function() {
@@ -68,7 +68,7 @@ $('#list7').mouseover(function() {
 $('#list7').click(function() {
 	$('#musicPlayer h3').html('Need U Most 最需要你 K歌情人');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_387793,387794,387795,387796,387797,387798,387799,387800,387801,387802,387803,387804,387805,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_387793,387794,387795,387796,387797,387798,387799,387800,387801,387802,387803,387804,387805,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list8').mouseover(function() {
@@ -78,7 +78,7 @@ $('#list8').mouseover(function() {
 $('#list8').click(function() {
 	$('#musicPlayer h3').html('那些女孩教我的事');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_2072840,2072841,2072842,2072843,2072844,2072845,2072846,2072847,2072848,2072849,2072850,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_2072840,2072841,2072842,2072843,2072844,2072845,2072846,2072847,2072848,2072849,2072850,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list9').mouseover(function() {
@@ -88,7 +88,7 @@ $('#list9').mouseover(function() {
 $('#list9').click(function() {
 	$('#musicPlayer h3').html('当品冠遇见几米');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_1769832624,1769832625,1769832626,1769832627,1769832628,1769832629,1769832630,1769832631,1769832632,1769832633,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_1769832624,1769832625,1769832626,1769832627,1769832628,1769832629,1769832630,1769832631,1769832632,1769832633,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list10').mouseover(function() {
@@ -98,7 +98,7 @@ $('#list10').mouseover(function() {
 $('#list10').click(function() {
 	$('#musicPlayer h3').html('未拆的礼物');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_1770707680,1770707681,1770707682,1770707683,1770707684,1770707685,1770707686,1770707687,1770707688,1770707689,1770707690,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_1770707680,1770707681,1770707682,1770707683,1770707684,1770707685,1770707686,1770707687,1770707688,1770707689,1770707690,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 $('#list11').mouseover(function() {
@@ -108,7 +108,7 @@ $('#list11').mouseover(function() {
 $('#list11').click(function() {
 	$('#musicPlayer h3').html('一切为了爱');
 	$('#musicPlayer embed').remove();
-	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_1768947705,1768947706,1768947707,1768947708,1768947709,1768947710,1768947711,1768947712,1768947713,1768947714,1768947715,1768947716,1768947717,1768947718,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#musicPlayer').append('<embed src="http://www.xiami.com/widget/4097932_1768947705,1768947706,1768947707,1768947708,1768947709,1768947710,1768947711,1768947712,1768947713,1768947714,1768947715,1768947716,1768947717,1768947718,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
 	$('#musicPlayer').addClass("fixed");
 	});
 }
