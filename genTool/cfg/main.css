@@ -179,3 +179,15 @@ a#currentpagelinks {
 	text-align: center;	
 	margin-top: 25px;
 }
+
+#searchResult img {
+	margin-left: 100px;	
+}
+
+.videoWrapper {
+	width: 680px;
+	height: 480px;
+	margin: 0px;
+	padding: 0px;
+}
+

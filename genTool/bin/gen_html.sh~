@@ -1,4 +1,4 @@
-#! /bin/bash -ex
+#! /bin/bash -e
 
 ######################################################################
 # Initialize the parameters
@@ -46,6 +46,7 @@ cat << EOF
 <script type="text/javascript" src="$domain/js/logo.js"></script>
 <script type="text/javascript" src="$domain/js/search_keyword.js"></script>
 <link href="$domain/css/main.css" type="text/css" rel="stylesheet" />
+$special_css
 $player_js
 </head>
 
@@ -88,7 +89,6 @@ $default_music_loc
 <option>软件</option>
 <option>博客</option>
 <option>其他</option>
-</option>
 </select>
 <input type="submit" name="submit_search" value="搜索" />
 </form>
@@ -133,9 +133,8 @@ EOF
 
 else
 
-	if [[ $middle_start_point > 2 ]]; then
+	if [[ $middle_start_point -gt 2 ]]; then
 cat << EOF
-<div>
 <span class="pagelinks">...</span>
 EOF
 i=$middle_start_point
@@ -144,7 +143,6 @@ i=$middle_start_point
 	if [ $((middle_end_point + 1)) -lt $page_count ];then
 		 if [ $i -eq $((middle_end_point + 1)) ];then
 cat << EOF
-<div>
 <span class="pagelinks">...</span>
 EOF
 		 i=$page_count
@@ -153,13 +151,11 @@ EOF
 
 	if [[ $i == $current_page ]]; then
 cat << EOF
-<div>
-<a id="currentpagelinks" class="pagelinks" href="$domain/${page_dir}index.html" >$i</a>
+<a id="currentpagelinks" class="pagelinks" href="$domain/${page_dir}${page_dir%%/}_$i.html" >$i</a>
 EOF
 	else
 cat << EOF
-<div>
-<a class="pagelinks" href="$domain/${page_dir}index.html" >$i</a>
+<a class="pagelinks" href="$domain/${page_dir}${page_dir%%/}_$i.html" >$i</a>
 EOF
 	fi
 
@@ -167,6 +163,7 @@ fi
 
 ((i+=1))
 done
+echo "</div>"
 }
 
 
@@ -175,7 +172,7 @@ function gen_topic_div {
 cat <<EOF
 <div id="topic$topic_id" class="topic">
 <span class="time">$modified_date</span>
-<a href="$domain/topics/topic_$topic_id.html" class="topicTitle"><h3>$topic_name</h3></a>
+<a href="$domain/topics/topic_$topic_id.html" class="topicTitle" target="_blank"><h3>$topic_name</h3></a>
 EOF
 }
 
@@ -191,8 +188,8 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣')
-	if [[ $_list_count > 1 ]]; then
+	'影音'|'足球'|'有趣'|'其他')
+	if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 <span class="listtxt">$list_desc</span>
 $list_outer_link
@@ -228,8 +225,8 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣')
-if [[ $_list_count > 1 ]]; then
+	'影音'|'足球'|'有趣'|'其他')
+if [[ $_list_count -gt 1 ]]; then
 	echo '</ul>'
 fi
 cat << EOF
@@ -257,23 +254,40 @@ cat << EOF
 	});
 \$('#list$list_id').click(function() {
 	\$('#musicPlayer h3').html('$list_name');
-	\$('#musicPlayer embed').remove();
-	\$('#musicPlayer').append('$list_outer_link');
-	\$('#musicPlayer').addClass("fixed");
+	\$('#musicPlayer embed').replaceWith('$list_outer_link');
+	\$('#topic$topic_id li').css('color', '#000000');
+	\$('#list$list_id').css('color', '#CC0052');
 	});
 
 EOF
 	;;
 
 	'影音'|'足球'|'有趣')
-	if [[ $_list_count > 1 ]]; then
+	if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 \$( function() {
 
 \$('#list$list_id').click(function() {
 	\$('#topic$topic_id span.listtxt').html('$list_desc');
-	\$('#topic$topic_id embed').remove();
-	\$('#topic$topic_id span.listtxt').after('$list_outer_link');
+	\$('#topic$topic_id embed').wrap('<div class="videoWrapper" />');
+	\$('#topic$topic_id embed').replaceWith('$list_outer_link');
+	\$('#topic$topic_id li').css('color', '#000000');
+	\$('#list$list_id').css('color', '#CC0052');
+	});
+EOF
+	fi
+	;;
+
+	'其他')
+	if [[ $_list_count -gt 1 ]]; then
+cat << EOF
+\$( function() {
+
+\$('#list$list_id').click(function() {
+	\$('#topic$topic_id li').css('color', '#000000');
+	\$('#list$list_id').css('color', '#CC0052');
+	\$('#topic$topic_id span.listtxt').load("getListDesc.php", "list_id=$list_id");
+	\$('#topic$topic_id').animate({scrollTop:0}, 'slow');
 	});
 EOF
 	fi
@@ -294,17 +308,28 @@ cat << EOF
 	});
 \$('#list$list_id').click(function() {
 	\$('#musicPlayer h3').html('$list_name');
-	\$('#musicPlayer embed').remove();
-	\$('#musicPlayer').append('$list_outer_link');
-	\$('#musicPlayer').addClass("fixed");
+	\$('#musicPlayer embed').replaceWith('$list_outer_link');
+	\$('#topic$topic_id li').css('color', '#000000');
+	\$('#list$list_id').css('color', '#CC0052');
+	});
+EOF
+elif [[ $topic_type_desc == '其他' ]]; then
+cat << EOF
+\$('#list$list_id').click(function() {
+	\$('#topic$topic_id li').css('color', '#000000');
+	\$('#list$list_id').css('color', '#CC0052');
+	\$('#topic$topic_id span.listtxt').load("getListDesc.php", "list_id=$list_id");
+	\$('#topic$topic_id').animate({scrollTop:0}, 'slow');
 	});
 EOF
 else
 cat << EOF
 \$('#list$list_id').click(function() {
 	\$('#topic$topic_id span.listtxt').html('$list_desc');
-	\$('#topic$topic_id embed').remove();
-	\$('#topic$topic_id span.listtxt').after('$list_outer_link');
+	\$('#topic$topic_id embed').wrap('<div class="videoWrapper" />');
+	\$('#topic$topic_id embed').replaceWith('$list_outer_link');
+	\$('#topic$topic_id li').css('color', '#000000');
+	\$('#list$list_id').css('color', '#CC0052');
 	});
 EOF
 fi
@@ -321,8 +346,8 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣')
-if [[ $_list_count > 1 ]]; then
+	'影音'|'足球'|'有趣'|'其他')
+if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 }
 )
@@ -350,7 +375,19 @@ function gen_topic_div_box {
    on   t.topic_id = l.topic_id
    where t.topic_id = $_topic_id
    ;"
+   
    $mysql_connect_str --execute="$get_data_query" > $tmp_dir/topic_$_topic_id.info.txt
+   
+	#Generate special css   
+   get_max_list_name_length="select max(char_length(list_name)) from f_topic_list where topic_id = $_topic_id;"
+   get_max_list_desc_length="select max(char_length(list_desc)) from f_topic_list where topic_id = $_topic_id;"
+   list_name_length=$($mysql_connect_str --execute="$get_max_list_name_length")
+   list_desc_length=$($mysql_connect_str --execute="$get_max_list_desc_length")
+   echo "#topic$_topic_id li {width: ${list_name_length}em}" > $output_css/topic_$_topic_id.css
+   if [ $list_desc_length -gt 1000 ]; then
+		echo "#topic$_topic_id {max-height:700px;overflow:scroll;}" >> $output_css/topic_$_topic_id.css
+	fi
+	
    topic_content_file=$tmp_dir/topic_$_topic_id.html
    > $topic_content_file
    topic_js_file=$tmp_dir/topic_$_topic_id.js
@@ -368,7 +405,7 @@ function gen_topic_div_box {
       topic_type_id=$(echo $_line | awk -F"\007" '{print $8}')
       topic_name="$(echo $_line | awk -F"\007" '{print $9}')"
       topic_type_desc="$(echo $_line | awk -F"\007" '{print $10}')"
-		if [[ $topic_type_desc == "音乐" ]]; then
+		if [[ $topic_type_desc == "音乐" || $topic_type_desc == "其他" ]]; then
       	list_outer_link="$(echo $_line | awk -F"\007" '{print $6}')"
       else
       	list_outer_link="$(echo $_line | awk -F"\007" '{print $6}' | sed 's/width="[0-9]*"/width="680"/;s/height="[0-9]*"/height="480"/')"
@@ -415,7 +452,7 @@ on   t.topic_type_id = d.topic_type_id
 join f_topic_list l
 on   t.topic_id = l.topic_id
 where d.topic_type_desc = '音乐'
-order by l.modified_ts desc
+order by rand()
 limit 1
 ;
 "
@@ -449,14 +486,16 @@ echo "Copying common use files"
 cp $cfg_dir/*png $output_img
 cp $cfg_dir/*ico $output_dir
 cp $cfg_dir/*php $output_php
-cp $cfg_dir/searching.php $output_dir 
+cp $cfg_dir/searching.php $output_dir
+cp $cfg_dir/getListDesc.php $output_dir
 cp $cfg_dir/searching.php $output_dir/blog 
 cp $cfg_dir/searching.php $output_dir/fun 
 cp $cfg_dir/searching.php $output_dir/music 
 cp $cfg_dir/searching.php $output_dir/mv 
-cp $cfg_dir/searching.php $output_dir/others 
+cp $cfg_dir/searching.php $output_dir/others
+cp $cfg_dir/getListDesc.php $output_dir/others 
 cp $cfg_dir/searching.php $output_dir/soccer 
-cp $cfg_dir/searching.php $output_dir/software 
+cp $cfg_dir/searching.php $output_dir/software
 cp $cfg_dir/searching.php $output_dir/topics  
 cp $cfg_dir/*js $output_js
 cp $cfg_dir/*css $output_css
@@ -503,6 +542,7 @@ do
 	else
 		player_js=""
 	fi
+	special_css='<link href="'$domain'/css/topic_'$topic_id'.css" type="text/css" rel="stylesheet" />'
 	gen_html_head > $output_dir/${page_dir}topic_$topic_id.html
 	cat $tmp_dir/topic_$topic_id.html >> $output_dir/${page_dir}topic_$topic_id.html
 	gen_html_tail >> $output_dir/${page_dir}topic_$topic_id.html
@@ -530,16 +570,19 @@ order by 2 desc
 	mkdir -p $tmp_dir/${page_dir}
 	$mysql_connect_str --execute="$get_topics_query" > $tmp_dir/${page_dir}_topic_id.txt
 	topic_count=$(wc -l $tmp_dir/${page_dir}_topic_id.txt | awk '{print $1}')
-	page_count=$((topic_count/count_in_onepage + 1))
+	page_count=$(((topic_count-1)/count_in_onepage + 1))
 	count_id=1
 	page_index=1
 	player_js=""
 	current_div_all=""
+	special_css=""
+	topic_id_list="-1" #dummy data
 
 
 	while [ $count_id -le $topic_count ]
 	do
 		topic_id=$(sed ''$count_id' !d' $tmp_dir/${page_dir}_topic_id.txt | awk '{print $1}')
+		topic_id_list="$topic_id_list"",$topic_id"
 
 
 		if [ -s $tmp_dir/topic_$topic_id.js ];then
@@ -547,14 +590,14 @@ order by 2 desc
 			cp $tmp_dir/topic_$topic_id.js $output_js
 		fi
 
-
+		special_css="$special_css"'<link href="'$domain'/css/topic_'$topic_id'.css" type="text/css" rel="stylesheet" />'
 
 		current_div_all="$current_div_all"$(cat $tmp_dir/topic_$topic_id.html)
 
 
 		if [ $((count_id % 5)) -eq 0 -o $count_id -eq $topic_count ];then
 			current_page=$page_index
-			gen_default_music_palyer $topic_id
+			gen_default_music_palyer $topic_id_list
 			html_title=$default_page_title
 			if [[ $page_index == 1 ]]; then
 				gen_html_head > $output_dir/${page_dir}index.html
@@ -564,11 +607,12 @@ order by 2 desc
 			else
 				gen_html_head > $output_dir/${page_dir}${page_dir%%/}_$page_index.html
 				echo $current_div_all >> $output_dir/${page_dir}${page_dir%%/}_$page_index.html
-				gen_page_links >> $output_dir/${page_dir}index.html
-				gen_html_tail >> $output_dir/${page_dir}index.html
+				gen_page_links >> $output_dir/${page_dir}${page_dir%%/}_$page_index.html
+				gen_html_tail >> $output_dir/${page_dir}${page_dir%%/}_$page_index.html
 			fi
 			player_js=""
 			current_div_all=""
+			topic_id_list="-1"
 			((page_index+=1))
 		fi
 		((count_id+=1))
@@ -587,6 +631,8 @@ gen_main_page "足球" "soccer/"
 echo "Generating mv pages..."
 gen_main_page "影音" "mv/"
 
+echo "Generating others pages..."
+gen_main_page "其他" "others/"
 
 ######################################################################
 # Post Jobs

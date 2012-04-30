@@ -66,6 +66,7 @@ done < $etl_tmp_dir/f_topic_list.txt
 ######################################################################
 # compress
 ######################################################################
+rm $sql_file.gz
 gzip $sql_file
 
 echo "Please import file $sql_file and run call topic_list_ups to upsert."

@@ -22,55 +22,10 @@ export default_page_title="陆赛赛的网络小屋"
 #export domain="http://im633.com"
 export domain=$output_dir
 
+page_count=2
+current_page=2
 
-######################################################################
-# Functions
-######################################################################
-# Generate the html head
-function gen_html_head {
-cat << EOF
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>$html_title</title>
-<link rel="shortcut icon" href="$domain/favicon.ico">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="$domain/js/navigation.js"></script>
-<script type="text/javascript" src="$domain/js/logo.js"></script>
-<link href="$domain/css/main.css" type="text/css" rel="stylesheet" />
-$player_js
-</head>
 
-<body>
-<ul id="nav">
-<li><a href="$domain" >首页</a></li>
-<li><a href="$domain/music" >音乐</a></li>
-<li><a href="$domain/mv" >影音</a></li>
-<li><a href="$domain/soccer" >足球</a></li>
-<li><a href="$domain/fun" >有趣</a></li>
-<li><a href="$domain/software" >软件</a></li>
-<li><a href="$domain/blog" >博客</a></li>
-<li><a href="$domain/others" >其他</a></li>
-</ul>
-
-<div id="main">
-
-<div id="header">
-<canvas id="logo" width="380" height="100"><img src="images/logo.png" alt="im633" ></canvas>
-<h3 id="bw"><?php include("php/getPoem.php"); ?></h3>
-</div>
-
-<div id="bdy">
-<div id="musicPlayer">
-<h3>我喜欢的音乐...</h3>
-$default_muisc_loc
-</div>
-<div id="topicBox">
-EOF
-}
-
-#Generate the page links
 function gen_page_links {
 i=1
 middle_start_point=$((current_page - 5))
@@ -98,13 +53,13 @@ cat << EOF
 EOF
 i=$middle_start_point
 	fi
-	
+
 	if [ $((middle_end_point + 1)) -lt $page_count ];then
 		 if [ $i -eq $((middle_end_point + 1)) ];then
 cat << EOF
 <div>
 <span class="pagelinks">...</span>
-EOF	 
+EOF
 		 i=$page_count
 		 fi
 	fi
@@ -113,18 +68,16 @@ EOF
 cat << EOF
 <div>
 <a id="currentpagelinks" class="pagelinks" href="$domain/${page_dir}index.html" >$i</a>
-EOF	
+EOF
 	else
 cat << EOF
 <div>
 <a class="pagelinks" href="$domain/${page_dir}index.html" >$i</a>
-EOF	
+EOF
 	fi
 
 fi
 
-
 ((i+=1))
 done
 }
-

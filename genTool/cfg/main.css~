@@ -11,7 +11,7 @@ a.topicTitle {
     text-shadow: 1px 1px #FFE0E0;
 }
 
-a.topicTitle:hover {
+a.topicTitle:hover,#searchResult a:hover {
     color: #02A817;
     text-shadow: 1px 1px 1px #FFE0E0;
 }
@@ -179,3 +179,15 @@ a#currentpagelinks {
 	text-align: center;	
 	margin-top: 25px;
 }
+
+#searchResult img {
+	margin-left: 100px;	
+}
+
+.videoWrapper {
+	width: 680px;
+	height: 480px;
+	margin: 0px;
+	padding:0px;
+}
+

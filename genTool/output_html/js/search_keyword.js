@@ -6,6 +6,7 @@ function space_remove(name) {
 
 function searching() {
 	$('#searchResult').html("");
+	$('#searchResult').append('<img src="http://im633.com/images/searching.gif">');
 	$('#searchResult').load("searching.php", space_remove($('#searchForm').serialize()));
 	return false;
 }

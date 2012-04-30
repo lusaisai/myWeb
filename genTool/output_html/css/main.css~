@@ -11,7 +11,7 @@ a.topicTitle {
     text-shadow: 1px 1px #FFE0E0;
 }
 
-a.topicTitle:hover {
+a.topicTitle:hover,#searchResult a:hover {
     color: #02A817;
     text-shadow: 1px 1px 1px #FFE0E0;
 }
@@ -50,8 +50,8 @@ overflow: auto;
     *display: inline;
     _height: 80px;
     margin: auto;
-    padding-left: 10px;
-    padding-top: 1px;
+    padding-left: 50px;
+    padding-top: 20px;
     width: 550px;
     height: 100px;
     vertical-align: top;
@@ -59,7 +59,7 @@ overflow: auto;
 }
 
 #bw {
-    margin: 2px 5px 10px 25px;
+    margin: 2px 5px 10px 5px;
 }
 
 span.music {
@@ -110,16 +110,11 @@ canvas {
     border:1px solid #aaaaaa;
 }
 
-#musicPlayer,#topicBox {
-    width: 250px;
-    height: 400px;
-    float: left;
-    padding: 5px
-}
-
-#musicPlayer.fixed {
-  position: fixed;
-  top: 170px;
+#left_panel {
+  width: 250px;
+  height: 100%;
+  float: left;
+  padding: 5px
 }
 
 #musicPlayer embed{
@@ -134,6 +129,7 @@ canvas {
     margin-left: 20px;
     height: 100%;
     float: right;
+	padding: 5px;
 }
 
 .albumImage {
@@ -181,13 +177,21 @@ a#currentpagelinks {
 
 #searchBox {
 	text-align: center;	
-	
+	margin-top: 25px;
 }
 
-input[type="search"] {
-	color: blue;
-	font-style: italic;
+#searchResult img {
+	margin-left: 100px;	
 }
 
+.videoWrapper {
+	width: 680px;
+	height: 480px;
+	margin: 0px;
+	padding: 0px;
+}
 
+#topic6 {max-height:700px;overflow:scroll;}
+
+#topic2 li {width:10 em;}
 
