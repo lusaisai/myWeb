@@ -2,6 +2,7 @@ fb_focus_follow: 1
 display_right_margin: 0
 outputb_show_all_output: 0
 e2c.convert_iso: 0
+searchlist: rss
 searchlist: >
 searchlist: >
 searchlist: middle
@@ -11,7 +12,6 @@ searchlist: myweb01
 searchlist: listtxt
 searchlist: default_music_loc
 searchlist: list_desc
-searchlist: default_muisc_loc
 wrap_text_default: 0
 spell_insert_entities: 0
 view_cline: 1
@@ -69,8 +69,9 @@ last_filefilter:
 view_main_toolbar: 1
 htmlbar_view: 1
 autoindent: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:14194:\tgen_html_tail >> $output_dir/${page_dir:16933:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4274:<a href="$domain/soccer" ><h3>$topic_nam:16933:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:6123:\tlist_name=$(echo $list_name):20124:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17025:\tgen_html_tail >> $output_dir/${page_dir:20124:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5090:<a href="$domain/soccer" ><h3>$topic_nam:20124:
 c2e.convert_special: 0
 editor_tab_width: 3
 view_left_panel: 1

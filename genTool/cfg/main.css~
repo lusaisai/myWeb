@@ -40,8 +40,14 @@ div#main {
 
 #bdy {
 height: 100%;
-margin-bottom: 100px;
+margin-bottom: 50px;
 overflow: auto;
+}
+
+#contact {
+	padding: 5px 100px;
+	text-shadow: 1px 1px 5px #ff0000;
+	margin-bottom: 50px;
 }
 
 #bwBox {
@@ -188,6 +194,6 @@ a#currentpagelinks {
 	width: 680px;
 	height: 480px;
 	margin: 0px;
-	padding:0px;
+	padding: 0px;
 }
 

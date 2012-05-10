@@ -105,7 +105,15 @@ function gen_html_tail {
 cat << EOF
 </div>
 </div>
-
+<div id="contact">
+<span>想及时获得更新？订阅网站的RSS或者关注我的新浪微博吧。</span>
+<a target="_blank" href="$domain/feed/rss.xml" ><img src="$domain/images/rss.png" alt="RSS" ></a>
+<iframe width="63" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=2709323403&style=1&btn=red&dpc=1"></iframe>
+<br />
+<span>想和我交流？给我发email或者在线聊Q吧。</span>
+<a href="mailto:lusaisai@im633.com" ><img src="$domain/images/email.png" alt="mail" ></a>
+<a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936&pic=41" alt="与我交流" title="与我交流"></a>
+</div>
 </div>
 </body>
 </html>
@@ -188,7 +196,7 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣'|'其他')
+	'影音'|'足球'|'有趣'|'其他'|'软件')
 	if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 <span class="listtxt">$list_desc</span>
@@ -225,7 +233,7 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣'|'其他')
+	'影音'|'足球'|'有趣'|'其他'|'软件')
 if [[ $_list_count -gt 1 ]]; then
 	echo '</ul>'
 fi
@@ -242,6 +250,8 @@ EOF
 
 # Generate the javascript to changing the player
 function gen_js_head {
+	list_name=$(echo $list_name | sed s/\'/\\\\\'/g)
+	list_desc=$(echo $list_desc | sed s/\'/\\\\\'/g)
 	case $topic_type_desc in
 	'音乐')
 	list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
@@ -278,7 +288,7 @@ EOF
 	fi
 	;;
 
-	'其他')
+	'其他'|'软件')
 	if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 \$( function() {
@@ -299,6 +309,8 @@ EOF
 }
 
 function gen_js_middle {
+	list_name=$(echo $list_name | sed s/\'/\\\\\'/g)
+	list_desc=$(echo $list_desc | sed s/\'/\\\\\'/g)
 if [[ $topic_type_desc == '音乐' ]]; then
 list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
 cat << EOF
@@ -346,7 +358,7 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣'|'其他')
+	'影音'|'足球'|'有趣'|'其他'|'软件')
 if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 }
@@ -475,7 +487,53 @@ limit 1
 		default_music_loc="$($mysql_connect_str --execute="$get_latest_list_query")"
 	fi
 }
+######################################################################
+# Generate RSS Feed
+######################################################################
+function gen_rss_head {
+cat << EOF
+<?xml version="1.0" encoding="utf8" ?>
+<rss version="2.0">
+<channel>
+  <title>陆赛赛的网络小屋</title>
+  <link>http://www.im633.com</link>
+  <description>音乐，影音，足球，软件...一切值得珍藏的</description>
+EOF
+}
 
+
+function gen_rss_middle {
+case $topic_type_desc in
+	'音乐'|'影音'|'足球'|'有趣')
+cat << EOF
+  <item>
+    <title>$topic_name</title>
+    <link>$domain/topics/topic_$topic_id.html</link>
+    <description>$list_desc</description>
+    <guid>$domain/topics/topic_$topic_id.html</guid>
+  </item>
+EOF
+	;;
+	*)
+
+cat << EOF
+  <item>
+    <title>$topic_name</title>
+    <link>$domain/topics/topic_$topic_id.html</link>
+    <description>$topic_name</description>
+    <guid>$domain/topics/topic_$topic_id.html</guid>
+  </item>
+EOF
+	;;
+esac
+}
+
+function gen_rss_tail {
+cat << EOF
+</channel>
+</rss>
+EOF
+}
 
 
 
@@ -501,7 +559,7 @@ cp $cfg_dir/*js $output_js
 cp $cfg_dir/*css $output_css
 
 ######################################################################
-# Generate the html block files to be used later
+# Generate the html block files to be used later and the RSS Feed
 # Only generate newly updated topics/lists
 ######################################################################
 echo "Generating html blocks"
@@ -518,13 +576,18 @@ order by 2 desc
 $mysql_connect_str --execute="$get_topic_seq_query" > $tmp_dir/all_topic_id.txt
 all_count=$(wc -l $tmp_dir/all_topic_id.txt | awk '{print $1}')
 count_index=1
+
+gen_rss_head > $output_dir/feed/rss.xml
 while [ $count_index -le $all_count ]
 do
 	gen_topic_div_box $(sed ''$count_index' !d' $tmp_dir/all_topic_id.txt)
+	if [ $count_index -le 10 ]; then
+		gen_rss_middle >> $output_dir/feed/rss.xml
+	fi
 	((count_index+=1))
 done
 
-
+gen_rss_tail >> $output_dir/feed/rss.xml
 
 ######################################################################
 # Generate individual pages
@@ -633,6 +696,12 @@ gen_main_page "影音" "mv/"
 
 echo "Generating others pages..."
 gen_main_page "其他" "others/"
+
+echo "Generating fun pages..."
+gen_main_page "有趣" "fun/"
+
+echo "Generating software pages..."
+gen_main_page "软件" "software/"
 
 ######################################################################
 # Post Jobs

@@ -40,7 +40,7 @@ div#main {
 
 #bdy {
 height: 100%;
-margin-bottom: 100px;
+margin-bottom: 50px;
 overflow: auto;
 }
 
@@ -191,7 +191,7 @@ a#currentpagelinks {
 	padding: 0px;
 }
 
-#topic6 {max-height:700px;overflow:scroll;}
-
-#topic2 li {width:10 em;}
-
+#contact {
+	padding: 5px 50px;
+	text-shadow: 1px 1px 5px #ff0000;
+}
