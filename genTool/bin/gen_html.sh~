@@ -106,11 +106,11 @@ cat << EOF
 </div>
 </div>
 <div id="contact">
-<span>想及时获得更新？订阅网站的RSS或者关注我的新浪微博吧。</span>
+<span>订阅网站的RSS或者关注我的新浪微博</span>
 <a target="_blank" href="$domain/feed/rss.xml" ><img src="$domain/images/rss.png" alt="RSS" ></a>
 <iframe width="63" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=2709323403&style=1&btn=red&dpc=1"></iframe>
 <br />
-<span>想和我交流？给我发email或者在线聊Q吧。</span>
+<span>Email或者QQ联系</span>
 <a href="mailto:lusaisai@im633.com" ><img src="$domain/images/email.png" alt="mail" ></a>
 <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936&pic=41" alt="与我交流" title="与我交流"></a>
 </div>
@@ -196,7 +196,13 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣'|'其他'|'软件')
+	'博客')
+cat << EOF
+<span class="listtxt">$list_desc</span>
+EOF
+	;;
+	
+	*)
 	if [[ $_list_count -gt 1 ]]; then
 cat << EOF
 <span class="listtxt">$list_desc</span>
@@ -210,9 +216,6 @@ cat << EOF
 $list_outer_link
 EOF
 	fi
-	;;
-
-	*)
 	;;
 	esac
 }
@@ -233,7 +236,7 @@ cat << EOF
 EOF
 	;;
 
-	'影音'|'足球'|'有趣'|'其他'|'软件')
+	*)
 if [[ $_list_count -gt 1 ]]; then
 	echo '</ul>'
 fi
@@ -241,17 +244,14 @@ cat << EOF
 </div>
 EOF
 	;;
-
-	*)
-	;;
 	esac
 }
 
 
 # Generate the javascript to changing the player
 function gen_js_head {
-	list_name=$(echo $list_name | sed s/\'/\\\'/g)
-	list_desc=$(echo $list_desc | sed s/\'/\\\'/g)
+	list_name=$(echo $list_name | sed s/\'/\\\\\'/g)
+	list_desc=$(echo $list_desc | sed s/\'/\\\\\'/g)
 	case $topic_type_desc in
 	'音乐')
 	list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
@@ -309,8 +309,8 @@ EOF
 }
 
 function gen_js_middle {
-	list_name=$(echo $list_name | sed s/\'/\\\'/g)
-	list_desc=$(echo $list_desc | sed s/\'/\\\'/g)
+	list_name=$(echo $list_name | sed s/\'/\\\\\'/g)
+	list_desc=$(echo $list_desc | sed s/\'/\\\\\'/g)
 if [[ $topic_type_desc == '音乐' ]]; then
 list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
 cat << EOF
@@ -475,9 +475,9 @@ join d_topic_type d
 on   t.topic_type_id = d.topic_type_id
 join f_topic_list l
 on   t.topic_id = l.topic_id
-where d.topic_type_desc = '音乐'
+where d.topic_type_desc in ( '音乐', '博客')
 and t.topic_id in ( $_topic_id_list )
-order by t.modified_ts desc, l.list_id
+order by t.modified_ts desc, t.topic_id desc, l.list_id
 limit 1
 ;"
 
@@ -569,7 +569,7 @@ from f_topic t
 join ( select topic_id, max(modified_ts) as modified_ts from f_topic_list group by 1 ) l
 on t.topic_id = l.topic_id
 where greatest(t.modified_ts, l.modified_ts) >= '$last_extract_value'
-order by 2 desc
+order by 2 desc, 1 desc
 ;
 "
 
@@ -627,7 +627,7 @@ on   t.topic_type_id = d.topic_type_id
 and  d.topic_type_desc like '%$page_type%'
 join ( select topic_id, max(modified_ts) as modified_ts from f_topic_list group by 1 ) l
 on t.topic_id = l.topic_id
-order by 2 desc
+order by 2 desc, 1 desc
 ;"
 
 	mkdir -p $tmp_dir/${page_dir}
@@ -703,18 +703,20 @@ gen_main_page "有趣" "fun/"
 echo "Generating software pages..."
 gen_main_page "软件" "software/"
 
+echo "Generating blog pages..."
+gen_main_page "博客" "blog/"
+
 ######################################################################
 # Post Jobs
 ######################################################################
 # Update last extract value
-#date +'%F %R:%S' > $last_extract_file
-
-
-
-
-
-
-
+echo "Complete!
+Update the last extract value?(Y/y)"
+read x
+if [ "$x" = "y" -o "$x" = "Y" ]; then
+	date +'%F %R:%S' > $last_extract_file
+	echo "Updated!"
+fi
 
 
 exit 0

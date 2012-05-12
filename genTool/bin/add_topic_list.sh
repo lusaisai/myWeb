@@ -86,6 +86,10 @@ function ask_single_topic_list {
       	file_name=$(echo $list_desc | awk -F":" '{print $2}')
       	list_desc=$(sed '1, /^<BODY/ d;/^<\/BODY/, $ d' $file_name | tr '\n' ' ')
       fi
+      
+      if [ ${topic_array[topic_type_id]} == '博客' ]; then
+      	list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
+      fi
 
       list_desc=$(echo $list_desc | sed s/\'/\'\'/g)
 

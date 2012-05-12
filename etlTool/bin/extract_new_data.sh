@@ -62,6 +62,18 @@ do
 	echo "insert into stg_f_topic_list_w select " "$list_id, " "$topic_id, " "'$list_name', " "'$list_desc', " "'$list_image_loc', " "'$list_outer_link', " "'$list_other_link', " "'$modified_ts'" " from dual;" >> $sql_file
 done < $etl_tmp_dir/f_topic_list.txt
 
+######################################################################
+# Update last extract value
+######################################################################
+echo "Complete!
+Update the last extract value?(Y/y)"
+read x
+if [ "$x" = "y" -o "$x" = "Y" ]; then
+	date +'%F %R:%S' > $last_extract_file
+	echo "Updated!"
+fi
+
+
 
 ######################################################################
 # compress

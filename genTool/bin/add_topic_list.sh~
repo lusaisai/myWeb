@@ -82,10 +82,12 @@ function ask_single_topic_list {
       echo "Please enter your description of this list, use @FILE:<file path> to indicate you want to import data from a file."
       read list_desc
       
-      if [ $(echo $list_desc | awk -F":" '{print $1}') == "@FILE" ]; then
+      if [ "$(echo $list_desc | awk -F":" '{print $1}')" == "@FILE" ]; then
       	file_name=$(echo $list_desc | awk -F":" '{print $2}')
-      	list_desc=$(< $file_name)
+      	list_desc=$(sed '1, /^<BODY/ d;/^<\/BODY/, $ d' $file_name | tr '\n' ' ')
       fi
+
+      list_desc=$(echo $list_desc | sed s/\'/\'\'/g)
 
       echo "Below is what you have just input, enter y to deploy to mysql, enter n to reinput"
       echo "List Name: $list_name"
