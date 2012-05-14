@@ -127,7 +127,6 @@ canvas {
     width: 250px;
     height: 320px;
     overflow: hidden;
-    border: 1px solid black;
 }
 
 #topicBox {
@@ -197,3 +196,11 @@ a#currentpagelinks {
 	padding: 0px;
 }
 
+.albumImageWrapper {
+	width: 150px;
+	height: 150px;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+   *display: inline;
+}

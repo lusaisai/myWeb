@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>歌神张学友</title>
+<link rel="shortcut icon" href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/favicon.ico">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js"></script>
+<script type="text/javascript" src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/logo.js"></script>
+<script type="text/javascript" src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/search_keyword.js"></script>
+<link href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css" type="text/css" rel="stylesheet" />
+<link href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/topic_10.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/topic_10.js"></script>
+</head>
+
+<body>
+<ul id="nav">
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html" >首页</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music" >音乐</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv" >影音</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer" >足球</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun" >有趣</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software" >软件</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/blog" >博客</a></li>
+<li><a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others" >其他</a></li>
+</ul>
+
+<div id="main">
+
+<div id="header">
+<canvas id="logo" width="380" height="100"><img src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/images/logo.png" alt="im633" ></canvas>
+<div id="bwBox">
+<h3 id="bw"><?php include("/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php/getPoem.php"); ?></h3>
+</div>
+</div>
+
+<div id="bdy">
+<div id="left_panel">
+<div id="musicPlayer">
+<h3>推荐我喜欢的音乐...</h3>
+<embed src="http://www.xiami.com/widget/4097932_74559,386443,74214,74790,377521,75032,75042,1769743441,74560,377465,75333,390654,3399771,74799,_235_346_000000_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+</div>
+<div id="searchBox">
+<form id="searchForm">
+<input type="search" name="search_word" maxlength="2048" size="28"/>
+<select name="search_type">
+<option>全部</option>
+<option>音乐</option>
+<option>影音</option>
+<option>足球</option>
+<option>有趣</option>
+<option>软件</option>
+<option>博客</option>
+<option>其他</option>
+</select>
+<input type="submit" name="submit_search" value="搜索" />
+</form>
+</div>
+<div id="searchResult">
+</div>
+</div>
+<div id="topicBox">
+<div id="topic10" class="topic">
+<span class="time">2012-05-13</span>
+<a href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_10.html" class="topicTitle" target="_blank"><h3>歌神张学友</h3></a>
+<span class="albumImageWrapper">
+<img src="http://img.xiami.com/images/artistlogo/91/13160971051291_2.jpg" class="albumImage">
+</span>
+<span class="music listtxt">好歌实在太多，挑一些常听的整理出来。</span>
+<ul class="list">
+<li id="list112">学友精选</li>
+<li id="list113">Private Corner迷你音乐会</li>
+<li id="list114">在你身边</li>
+<li id="list115">雪狼湖</li>
+<li id="list116">活出生命Live演唱会</li>
+<li id="list117">他在那里</li>
+<li id="list118">学友 热</li>
+<li id="list119">友情对唱</li>
+<li id="list120">Jacky Cheung 15</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="contact">
+<span>订阅网站的RSS:</span>
+<a target="_blank" href="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/feed/rss.xml" ><img src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/images/rss.png" alt="RSS" ></a>
+<br />
+<span>我的Email和QQ:</span>
+<a href="mailto:lusaisai@im633.com" ><img src="/home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/images/email.png" alt="mail" ></a>
+<a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936&pic=41" alt="与我交流" title="与我交流"></a>
+</div>
+</div>
+</body>
+</html>

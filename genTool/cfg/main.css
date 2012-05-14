@@ -196,3 +196,15 @@ a#currentpagelinks {
 	padding: 0px;
 }
 
+.albumImageWrapper {
+	width: 150px;
+	height: 150px;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+   *display: inline;
+}
+
+a img {
+	border: none;	
+}

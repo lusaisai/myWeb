@@ -106,11 +106,10 @@ cat << EOF
 </div>
 </div>
 <div id="contact">
-<span>订阅网站的RSS或者关注我的新浪微博</span>
+<span>订阅网站的RSS:</span>
 <a target="_blank" href="$domain/feed/rss.xml" ><img src="$domain/images/rss.png" alt="RSS" ></a>
-<iframe width="63" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=2709323403&style=1&btn=red&dpc=1"></iframe>
 <br />
-<span>Email或者QQ联系</span>
+<span>我的Email和QQ:</span>
 <a href="mailto:lusaisai@im633.com" ><img src="$domain/images/email.png" alt="mail" ></a>
 <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936"><img border="0"  src="http://wpa.qq.com/imgd?IDKEY=e0c250b3b6e8a43afa5e1813f64a68d8d90f2e532bef8936&pic=41" alt="与我交流" title="与我交流"></a>
 </div>
@@ -189,7 +188,9 @@ function gen_list_div_head {
 	case $topic_type_desc in
 	'音乐')
 cat << EOF
+<div class="albumImageWrapper">
 <img src="$list_image_loc" class="albumImage">
+</div>
 <span class="music listtxt">$list_desc</span>
 <ul class="list">
 <li id="list$list_id">$list_name</li>
@@ -503,19 +504,6 @@ EOF
 
 
 function gen_rss_middle {
-case $topic_type_desc in
-	'音乐'|'影音'|'足球'|'有趣')
-cat << EOF
-  <item>
-    <title>$topic_name</title>
-    <link>$domain/topics/topic_$topic_id.html</link>
-    <description>$list_desc</description>
-    <guid>$domain/topics/topic_$topic_id.html</guid>
-  </item>
-EOF
-	;;
-	*)
-
 cat << EOF
   <item>
     <title>$topic_name</title>
@@ -524,8 +512,6 @@ cat << EOF
     <guid>$domain/topics/topic_$topic_id.html</guid>
   </item>
 EOF
-	;;
-esac
 }
 
 function gen_rss_tail {
@@ -579,16 +565,35 @@ $mysql_connect_str --execute="$get_topic_seq_query" > $tmp_dir/all_topic_id.txt
 all_count=$(wc -l $tmp_dir/all_topic_id.txt | awk '{print $1}')
 count_index=1
 
-gen_rss_head > $output_dir/feed/rss.xml
+
 while [ $count_index -le $all_count ]
 do
 	gen_topic_div_box $(sed ''$count_index' !d' $tmp_dir/all_topic_id.txt)
-	if [ $count_index -le 10 ]; then
-		gen_rss_middle >> $output_dir/feed/rss.xml
-	fi
 	((count_index+=1))
 done
 
+
+# The RSS Feed
+get_rss_query="select
+t.topic_id,
+t.topic_name
+from f_topic t
+join ( select topic_id, max(modified_ts) as modified_ts from f_topic_list group by 1 ) l
+on t.topic_id = l.topic_id
+order by greatest(t.modified_ts, l.modified_ts) desc, t.topic_id desc
+limit 10
+;"
+$mysql_connect_str --execute="$get_rss_query" > $tmp_dir/rss_data.txt
+
+rss_count=1
+gen_rss_head > $output_dir/feed/rss.xml
+while [ $rss_count -le 10 ]
+do
+	topic_id=$(sed ''$rss_count' !d' $tmp_dir/rss_data.txt | awk -F"	" '{print $1}')
+	topic_name=$(sed ''$rss_count' !d' $tmp_dir/rss_data.txt | awk -F"	" '{print $2}')
+	gen_rss_middle >> $output_dir/feed/rss.xml
+	((rss_count+=1))
+done
 gen_rss_tail >> $output_dir/feed/rss.xml
 
 ######################################################################

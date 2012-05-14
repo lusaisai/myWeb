@@ -1,21 +1,15 @@
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: _2.html
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: _3.html
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: _4.html
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: _5.html
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: blog
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: css
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: favicon.ico
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: feed
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: fun
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: getListDesc.php
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: images
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: index.html
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: js
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: music
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: mv
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: others
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: php
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: searching.php
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: soccer
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: software
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: topics
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_2.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_3.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_4.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_4.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_5.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_5.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css: topic_25.css
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/feed/rss.xml and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/feed/rss.xml differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/fun/index.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/index.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js: topic_25.js
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/index.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_2.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/others/index.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/soccer/index.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/software/index.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: topic_25.html
