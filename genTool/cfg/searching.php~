@@ -27,11 +27,11 @@ $where_query = " and locate('$keyword_list[0]', concat(topic_name,list_name,list
 
 
 for ( $i=1; $i < count($keyword_list); $i++ ) {
-	$where_query .= "and locate( '$keyword_list[$i]', concat(topic_name,list_name,list_desc,topic_tags) ) > 0 ";
-	$topic_name_query .= " case when locate('$keyword_list[$i]', topic_name) > 0 then 1";
-	$list_name_query .= " case when locate('$keyword_list[$i]',  list_name)  > 0  then 1";
-	$list_desc_query .= " case when locate('$keyword_list[$i]', list_desc) > 0 then 1";
-	$topic_tags_query .= " case when locate('$keyword_list[$i]', topic_tags) > 0 then 1";
+	$where_query .= " and locate( '$keyword_list[$i]', concat(topic_name,list_name,list_desc,topic_tags) ) > 0 ";
+	$topic_name_query .= " when locate('$keyword_list[$i]', topic_name) > 0 then 1";
+	$list_name_query .= " when locate('$keyword_list[$i]',  list_name)  > 0  then 1";
+	$list_desc_query .= " when locate('$keyword_list[$i]', list_desc) > 0 then 1";
+	$topic_tags_query .= " when locate('$keyword_list[$i]', topic_tags) > 0 then 1";
 }
 $topic_name_query .= " else 0 end as topic_name_rank, ";
 $list_name_query .= " else 0 end as list_name_rank, ";

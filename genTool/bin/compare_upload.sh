@@ -56,16 +56,18 @@ do
 	fi
 done < $diff_result_file
 
-
 ######################################################################
-# copy the uploaded files to the latest dir
+# Push to bluehost and copy the uploaded files to the latest dir
 ######################################################################
-echo "Copy the uploaded files to the latest dir?(Y/y)"
+echo "Push new code to im633.com?(Y/y)"
 
 read x
 if [ "$x" = "y" -o "$x" = "Y" ]; then
+   ncftpput -R -v -u imsixthr im633.com /public_html $upload_dir/*
+   echo "pushed to im633.com and now copying uploaded files to the latest dir"
 	cp -r $upload_dir/* $last_dir
 	echo "Copying done!"
 fi
+
 
 exit 0

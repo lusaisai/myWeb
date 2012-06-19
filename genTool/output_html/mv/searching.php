@@ -38,7 +38,7 @@ $list_name_query .= " else 0 end as list_name_rank, ";
 $list_desc_query .= " else 0 end as list_desc_rank, ";
 $topic_tags_query .= " else 0 end as topic_tags_rank";
 
-$query = "select topic_id, topic_name from (select t.topic_id, t.topic_name, " . $topic_name_query . $list_name_query . $list_desc_query . $topic_tags_query . $join_query . $where_query. ") c group by 1,2 order by sum(topic_name_rank) desc, sum(list_name_rank) desc, sum(list_desc_rank) desc, sum(topic_tags_rank) desc limit 20";
+$query = "select topic_id, topic_name from (select t.topic_id, t.topic_name, " . $topic_name_query . $list_name_query . $list_desc_query . $topic_tags_query . $join_query . $where_query. ") c group by 1,2 order by sum(topic_name_rank) desc, sum(list_name_rank) desc, sum(list_desc_rank) desc, sum(topic_tags_rank) desc limit 30";
 
 $mysqli = new mysqli('localhost','imsixthr_myweb','imsixthr_myweb','imsixthr_myweb01');
 $mysqli->set_charset("utf8");
@@ -55,4 +55,3 @@ while ($row = $result->fetch_object()) {
 $mysqli->close();
 
 ?>
-

@@ -34,7 +34,7 @@ function copy_new_file {
 	if [ $rcode -eq 0 ]; then
 		file_name=$(echo $input |sed -e 's/^Only in //' -e 's/: /\//')
 		target_folder=$(echo $input | awk '{print $3}' | sed -e 's:'$output_dir'::' -e 's/://')
-		cp $file_name $upload_dir$target_folder
+		cp -r $file_name $upload_dir$target_folder
 	fi
 }
 
@@ -42,7 +42,7 @@ function copy_diff_file {
 	input="$*"
 	file_name=$(echo $input | awk '{print $2}')
 	target_folder=$(echo $input | awk '{print $2}' | sed 's:'$output_dir'::')
-	cp $file_name $upload_dir$target_folder
+	cp -r $file_name $upload_dir$target_folder
 }
 
 while read line
@@ -56,16 +56,18 @@ do
 	fi
 done < $diff_result_file
 
-
 ######################################################################
-# copy the uploaded files to the latest dir
+# Push to bluehost and copy the uploaded files to the latest dir
 ######################################################################
-echo "Copy the uploaded files to the latest dir?(Y/y)"
+echo "Push new code to im633.com?(Y/y)"
 
 read x
 if [ "$x" = "y" -o "$x" = "Y" ]; then
+   ncftpput -R -v -u imsixthr im633.com /public_html $upload_dir
+   echo "pushed to im633.com and now copying uploaded files to the latest dir"
 	cp -r $upload_dir/* $last_dir
 	echo "Copying done!"
 fi
+
 
 exit 0
