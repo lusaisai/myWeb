@@ -4,17 +4,19 @@ Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_4.html and /home/
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_5.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_5.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_6.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_6.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_7.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_7.html differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css: topic_34.css
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: _8.html
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css: topic_36.css
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/feed/rss.xml and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/feed/rss.xml differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/fun/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/index.html differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js: topic_34.js
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js: topic_36.js
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_2.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_3.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_2.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_3.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/others/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/soccer/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/software/index.html differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: topic_34.html
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: topic_36.html

@@ -140,11 +140,11 @@ EOF
 
 else
 
-	if [[ $middle_start_point -gt 2 ]]; then
+	if [[ $middle_start_point -gt 2 && $i -lt $middle_start_point ]]; then
 cat << EOF
 <span class="pagelinks">...</span>
 EOF
-i=$middle_start_point
+   i=$middle_start_point
 	fi
 
 	if [ $((middle_end_point + 1)) -lt $page_count ];then
@@ -202,7 +202,7 @@ cat << EOF
 <span class="listtxt">$list_desc</span>
 EOF
 	;;
-	
+
 	*)
 	if [[ $_list_count -gt 1 ]]; then
 cat << EOF
@@ -388,10 +388,10 @@ function gen_topic_div_box {
    on   t.topic_id = l.topic_id
    where t.topic_id = $_topic_id
    ;"
-   
+
    $mysql_connect_str --execute="$get_data_query" > $tmp_dir/topic_$_topic_id.info.txt
-   
-	#Generate special css   
+
+	#Generate special css
    get_max_list_name_length="select max(char_length(list_name)) from f_topic_list where topic_id = $_topic_id;"
    get_max_list_desc_length="select max(char_length(list_desc)) from f_topic_list where topic_id = $_topic_id;"
    list_name_length=$($mysql_connect_str --execute="$get_max_list_name_length")
@@ -400,7 +400,7 @@ function gen_topic_div_box {
    if [ $list_desc_length -gt 1000 ]; then
 		echo "#topic$_topic_id {max-height:700px;overflow:scroll;}" >> $output_css/topic_$_topic_id.css
 	fi
-	
+
    topic_content_file=$tmp_dir/topic_$_topic_id.html
    > $topic_content_file
    topic_js_file=$tmp_dir/topic_$_topic_id.js
@@ -534,15 +534,15 @@ cp $cfg_dir/*ico $output_dir
 cp $cfg_dir/*php $output_php
 cp $cfg_dir/searching.php $output_dir
 cp $cfg_dir/getListDesc.php $output_dir
-cp $cfg_dir/searching.php $output_dir/blog 
-cp $cfg_dir/searching.php $output_dir/fun 
-cp $cfg_dir/searching.php $output_dir/music 
-cp $cfg_dir/searching.php $output_dir/mv 
+cp $cfg_dir/searching.php $output_dir/blog
+cp $cfg_dir/searching.php $output_dir/fun
+cp $cfg_dir/searching.php $output_dir/music
+cp $cfg_dir/searching.php $output_dir/mv
 cp $cfg_dir/searching.php $output_dir/others
-cp $cfg_dir/getListDesc.php $output_dir/others 
-cp $cfg_dir/searching.php $output_dir/soccer 
+cp $cfg_dir/getListDesc.php $output_dir/others
+cp $cfg_dir/searching.php $output_dir/soccer
 cp $cfg_dir/searching.php $output_dir/software
-cp $cfg_dir/searching.php $output_dir/topics  
+cp $cfg_dir/searching.php $output_dir/topics
 cp $cfg_dir/*js $output_js
 cp $cfg_dir/*css $output_css
 
