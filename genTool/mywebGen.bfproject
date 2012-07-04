@@ -6,7 +6,7 @@ view_cline: 1
 editor_indent_wspaces: 0
 c2e.convert_xml: 1
 snr_dotmatchall: 0
-htmlbar_view: 1
+c2e.convert_symbol: 0
 filegloblist: *.xml
 filegloblist: *.txt
 filegloblist: *.shtml
@@ -28,6 +28,7 @@ recent_dirs: file:///home/lusaisai/wwwLearning
 autoindent: 1
 e2c.convert_special: 0
 fb_viewmode: 0
+htmlbar_view: 1
 snippets_show_as_menu: 1
 bookmarks_show_mode: 0
 outputb_show_all_output: 0
@@ -43,32 +44,32 @@ searchlist: tar
 searchlist: ( topic_type_desc )
 searchlist: myweb01
 spell_lang: en_ZW
-c2e.convert_symbol: 0
 snr_escape_chars: 0
 view_blockstack: 1
 htmlbar_notebooktab: 0
 last_filefilter: 
 spell_insert_entities: 0
 spell_check_default: 1
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
 files: /home/lusaisai/wwwLearning/myweb0.1/etlTool/bin/extract_new_data.sh
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.php
+files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 snr_replacetype: 0
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.php
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/etlTool/bin/extract_new_data.sh
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.php
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/etlTool/bin/extract_new_data.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/sql/create_database_table_dll.sql
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/logo.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/search_keyword.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/getPoem.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/getListDesc.php
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/test.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/sql/initial_d_topic_type.ins.sql
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/getRandomMusic.php
@@ -91,13 +92,13 @@ snr_casesens: 0
 c2e.convert_iso: 0
 bookmarks_filename_mode: 0
 wrap_text_default: 0
-opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
+opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
 e2c.convert_xml: 1
 default_mime_type: text/x-sh
 view_left_panel: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5864:\tlist_name=$(echo $list_name):20437:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17159:\tgen_html_tail >> $output_dir/${page_dir:20437:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4788:<a href="$domain/soccer" ><h3>$topic_nam:20437:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5864:\tlist_name=$(echo $list_name):20450:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17172:\tgen_html_tail >> $output_dir/${page_dir:20450:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4788:<a href="$domain/soccer" ><h3>$topic_nam:20450:
 fb_show_backup_f: 0
 view_line_numbers: 1
 show_mbhl: 1

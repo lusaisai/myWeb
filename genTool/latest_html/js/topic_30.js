@@ -105,6 +105,13 @@ $('#list183').click(function() {
 	$('#topic30 li').css('color', '#000000');
 	$('#list183').css('color', '#CC0052');
 	});
+$('#list201').click(function() {
+	$('#topic30 span.listtxt').html('歌曲串烧,很赞');
+	$('#topic30 embed').wrap('<div class="videoWrapper" />');
+	$('#topic30 embed').replaceWith('<embed allowFullscreen="true" src="http://player.yinyuetai.com/video/player/436021/v_0.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic30 li').css('color', '#000000');
+	$('#list201').css('color', '#CC0052');
+	});
 }
 )
 ;

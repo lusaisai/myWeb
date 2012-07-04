@@ -128,6 +128,7 @@ function ask_topic_lists {
 # Push to MySQL
 ######################################################################
 function deploy_new_topic {
+   topic_name=$(echo $topic_name | sed s/\'/\'\'/g)
    f_topic_insert_query="insert into f_topic (topic_type_id, topic_name, topic_tags, topic_recom_flag)
    values ($topic_type_id, '$topic_name', '$topic_tags', '$topic_recom_flag');" 
    $mysql_connect_str --execute="$f_topic_insert_query"
