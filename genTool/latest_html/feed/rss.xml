@@ -5,6 +5,18 @@
   <link>http://www.im633.com</link>
   <description>音乐，影音，足球，软件...一切值得珍藏的</description>
   <item>
+    <title>大哥李宗盛</title>
+    <link>http://im633.com/topics/topic_41.html</link>
+    <description>大哥李宗盛</description>
+    <guid>http://im633.com/topics/topic_41.html</guid>
+  </item>
+  <item>
+    <title>Baby 张含韵</title>
+    <link>http://im633.com/topics/topic_40.html</link>
+    <description>Baby 张含韵</description>
+    <guid>http://im633.com/topics/topic_40.html</guid>
+  </item>
+  <item>
     <title>萧王子</title>
     <link>http://im633.com/topics/topic_39.html</link>
     <description>萧王子</description>
@@ -51,18 +63,6 @@
     <link>http://im633.com/topics/topic_33.html</link>
     <description>小天后徐怀钰</description>
     <guid>http://im633.com/topics/topic_33.html</guid>
-  </item>
-  <item>
-    <title>Spice Girls</title>
-    <link>http://im633.com/topics/topic_32.html</link>
-    <description>Spice Girls</description>
-    <guid>http://im633.com/topics/topic_32.html</guid>
-  </item>
-  <item>
-    <title>Bromance</title>
-    <link>http://im633.com/topics/topic_31.html</link>
-    <description>Bromance</description>
-    <guid>http://im633.com/topics/topic_31.html</guid>
   </item>
 </channel>
 </rss>
