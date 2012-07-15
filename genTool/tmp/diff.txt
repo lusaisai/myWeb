@@ -5,20 +5,89 @@ Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_5.html and /home/
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_6.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_6.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_7.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_7.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_8.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_8.html differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: _9.html
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css: topic_41.css
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/feed/rss.xml and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/feed/rss.xml differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_9.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_9.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/blog: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/blog: getPoem.php
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/blog/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/blog/index.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/blog: randomListen.php
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/main.css differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css~ and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/main.css~ differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/fun/index.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/index.html differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js: topic_41.js
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: index.html~
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/js/navigation.js differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js: navigation.js~
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_2.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_3.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_4.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_4.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_2.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_3.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/others/index.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/soccer/index.html differ
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software: getPoem.php
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/software/index.html differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: topic_41.html
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software: randomListen.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: getListDesc.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: getPoem.php
+Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics: randomListen.php
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_10.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_10.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_11.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_11.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_12.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_12.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_13.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_13.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_14.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_14.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_15.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_15.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_16.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_16.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_17.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_17.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_18.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_18.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_19.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_19.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_1.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_1.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_20.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_20.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_21.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_21.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_22.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_22.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_23.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_23.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_24.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_24.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_25.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_25.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_26.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_26.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_27.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_27.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_28.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_28.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_29.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_29.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_2.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_30.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_30.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_31.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_31.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_32.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_32.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_33.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_33.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_34.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_34.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_35.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_35.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_36.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_36.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_37.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_37.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_38.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_38.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_39.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_39.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_3.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_40.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_40.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_41.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_41.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_4.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_4.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_5.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_5.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_6.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_6.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_7.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_7.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_8.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_8.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/topic_9.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/topic_9.html differ

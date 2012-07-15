@@ -1,4 +1,4 @@
-﻿* html #nav {
+* html #nav {
     position: absolute;
 } /* Fixed Positioning in IE6 */
 
@@ -129,6 +129,10 @@ canvas {
     overflow: hidden;
 }
 
+#musicPlayer {
+    height: 380px;
+}
+
 #topicBox {
     width: 700px;
     margin-left: 20px;
@@ -201,8 +205,39 @@ a#currentpagelinks {
 	height: 150px;
 	margin: 0px;
 	padding: 0px;
-	border: 1px red solid;
 	display: inline-block;
    *display: inline;
 }
+
+a img {
+	border: none;	
+}
+
+ul#randomListen {
+	list-style: none;
+}
+
+ul#randomListen li {
+	background: #222;
+   display: inline-block;
+   padding: 5px 10px 6px;
+   color: #fff;
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+   text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 1px 2px 1px #5F9FFF;
+   border-bottom: 1px solid rgba(0,0,0,0.25);
+   position: relative;
+   cursor: pointer;
+   width: 130px;
+   text-align: center;
+}
+
+ul#randomListen li:hover {
+	background-color: #2981e4;
+}
+
+
 

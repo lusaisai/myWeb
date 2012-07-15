@@ -77,6 +77,7 @@ $player_js
 <h3>推荐我喜欢的音乐...</h3>
 $default_music_loc
 </div>
+<ul id="randomListen"><li>随便听听</li></ul>
 <div id="searchBox">
 <form id="searchForm">
 <input type="search" name="search_word" maxlength="2048" size="28"/>
@@ -532,17 +533,15 @@ mkdir -p blog css feed fun images js music mv others php soccer software topics
 cp $cfg_dir/*png $output_img
 cp $cfg_dir/*ico $output_dir
 cp $cfg_dir/*php $output_php
-cp $cfg_dir/searching.php $output_dir
-cp $cfg_dir/getListDesc.php $output_dir
-cp $cfg_dir/searching.php $output_dir/blog
-cp $cfg_dir/searching.php $output_dir/fun
-cp $cfg_dir/searching.php $output_dir/music
-cp $cfg_dir/searching.php $output_dir/mv
-cp $cfg_dir/searching.php $output_dir/others
-cp $cfg_dir/getListDesc.php $output_dir/others
-cp $cfg_dir/searching.php $output_dir/soccer
-cp $cfg_dir/searching.php $output_dir/software
-cp $cfg_dir/searching.php $output_dir/topics
+cp $cfg_dir/*.php $output_dir
+cp $cfg_dir/*.php $output_dir/blog
+cp $cfg_dir/*.php $output_dir/fun
+cp $cfg_dir/*.php $output_dir/music
+cp $cfg_dir/*.php $output_dir/mv
+cp $cfg_dir/*.php $output_dir/others
+cp $cfg_dir/*.php $output_dir/soccer
+cp $cfg_dir/*.php $output_dir/software
+cp $cfg_dir/*.php $output_dir/topics
 cp $cfg_dir/*js $output_js
 cp $cfg_dir/*css $output_css
 

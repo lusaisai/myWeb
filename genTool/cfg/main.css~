@@ -1,4 +1,4 @@
-﻿* html #nav {
+* html #nav {
     position: absolute;
 } /* Fixed Positioning in IE6 */
 
@@ -123,6 +123,10 @@ canvas {
   padding: 5px
 }
 
+#musicPlayer {
+	height: 400px;
+}
+
 #musicPlayer embed{
     width: 250px;
     height: 320px;
@@ -203,4 +207,8 @@ a#currentpagelinks {
 	padding: 0px;
 	display: inline-block;
    *display: inline;
+}
+
+a img {
+	border: none;	
 }
