@@ -1,19 +1,8 @@
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_8.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_8.html differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/blog/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/blog/randomListen.php differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/main.css differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/fun/index.html differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/fun/randomListen.php differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/randomListen.php differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_2.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_3.html differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/randomListen.php differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/others/index.html differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/others/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/others/randomListen.php differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/php/randomListen.php differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/randomListen.php differ
-Only in /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html: randomListen.php~
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/soccer/index.html differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/soccer/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/soccer/randomListen.php differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/software/index.html differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/software/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/software/randomListen.php differ
-Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/topics/randomListen.php and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/topics/randomListen.php differ
