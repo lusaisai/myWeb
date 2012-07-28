@@ -87,7 +87,7 @@ function ask_single_topic_list {
       	list_desc=$(sed '1, /^<BODY/ d;/^<\/BODY/, $ d' $file_name | tr '\n' ' ')
       fi
       
-      if [ ${topic_array[topic_type_id]} == '博客' ]; then
+      if [ "${topic_array[topic_type_id]}" = '博客' -o "$topic_name" = '博客' ]; then
       	list_outer_link=$(echo $list_outer_link | sed 's:_0/:_1/:')
       fi
 

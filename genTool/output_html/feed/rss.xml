@@ -5,6 +5,24 @@
   <link>http://www.im633.com</link>
   <description>音乐，影音，足球，软件...一切值得珍藏的</description>
   <item>
+    <title>中国好声音2012</title>
+    <link>http://im633.com/topics/topic_45.html</link>
+    <description>中国好声音2012</description>
+    <guid>http://im633.com/topics/topic_45.html</guid>
+  </item>
+  <item>
+    <title>无印良品</title>
+    <link>http://im633.com/topics/topic_46.html</link>
+    <description>无印良品</description>
+    <guid>http://im633.com/topics/topic_46.html</guid>
+  </item>
+  <item>
+    <title>Eugene - Cha.Cha</title>
+    <link>http://im633.com/topics/topic_44.html</link>
+    <description>Eugene - Cha.Cha</description>
+    <guid>http://im633.com/topics/topic_44.html</guid>
+  </item>
+  <item>
     <title>小仙女徐若瑄</title>
     <link>http://im633.com/topics/topic_43.html</link>
     <description>小仙女徐若瑄</description>
@@ -45,24 +63,6 @@
     <link>http://im633.com/topics/topic_37.html</link>
     <description>一帘幽梦</description>
     <guid>http://im633.com/topics/topic_37.html</guid>
-  </item>
-  <item>
-    <title>品冠MV</title>
-    <link>http://im633.com/topics/topic_30.html</link>
-    <description>品冠MV</description>
-    <guid>http://im633.com/topics/topic_30.html</guid>
-  </item>
-  <item>
-    <title>俏皮侯湘婷</title>
-    <link>http://im633.com/topics/topic_36.html</link>
-    <description>俏皮侯湘婷</description>
-    <guid>http://im633.com/topics/topic_36.html</guid>
-  </item>
-  <item>
-    <title>Chocolate Love</title>
-    <link>http://im633.com/topics/topic_35.html</link>
-    <description>Chocolate Love</description>
-    <guid>http://im633.com/topics/topic_35.html</guid>
   </item>
 </channel>
 </rss>

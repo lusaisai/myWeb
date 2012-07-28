@@ -2,6 +2,7 @@ fb_focus_follow: 1
 display_right_margin: 0
 outputb_show_all_output: 0
 e2c.convert_iso: 0
+searchlist: em
 searchlist: /home/lusaisai/wwwLearning/myweb0.1/genTool
 searchlist: output_html/
 searchlist: musicPlayer
@@ -11,14 +12,17 @@ searchlist: rss
 searchlist: last_extract_value
 searchlist: albumImage
 searchlist: img
-searchlist: >
 wrap_text_default: 0
 spell_insert_entities: 0
 view_cline: 1
 outputb_scroll_mode: 0
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
+files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 c2e.convert_iso: 0
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css
@@ -31,9 +35,6 @@ recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/randomListen.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/randomListen.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/topic_1.js
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/randomListen.php
 snippets_show_as_menu: 1
 show_mbhl: 1
 adv_open_recursive: 0
@@ -62,9 +63,9 @@ last_filefilter:
 view_main_toolbar: 1
 htmlbar_view: 1
 autoindent: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5905:\tlist_name=$(echo $list_name):20332:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17054:\tgen_html_tail >> $output_dir/${page_dir:20332:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4829:<a href="$domain/soccer" ><h3>$topic_nam:20332:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5905:\tlist_name=$(echo $list_name):20706:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17428:\tgen_html_tail >> $output_dir/${page_dir:20706:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4829:<a href="$domain/soccer" ><h3>$topic_nam:20706:
 c2e.convert_special: 0
 editor_tab_width: 3
 view_left_panel: 1
@@ -77,6 +78,6 @@ editor_indent_wspaces: 0
 spell_check_default: 1
 recent_dirs: file:///home/lusaisai/wwwLearning
 fb_show_backup_f: 0
-opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
+opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
 adv_open_matchname: 0

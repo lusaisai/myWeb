@@ -393,9 +393,12 @@ function gen_topic_div_box {
    $mysql_connect_str --execute="$get_data_query" > $tmp_dir/topic_$_topic_id.info.txt
 
 	#Generate special css
-   get_max_list_name_length="select max(char_length(list_name)) from f_topic_list where topic_id = $_topic_id;"
+   get_max_list_name_byte_length="select max(length(list_name)) from f_topic_list where topic_id = $_topic_id;"
+   get_max_list_name_char_length="select max(char_length(list_name)) from f_topic_list where topic_id = $_topic_id;"
    get_max_list_desc_length="select max(char_length(list_desc)) from f_topic_list where topic_id = $_topic_id;"
-   list_name_length=$($mysql_connect_str --execute="$get_max_list_name_length")
+   list_name_byte_length=$($mysql_connect_str --execute="$get_max_list_name_byte_length")
+   list_name_char_length=$($mysql_connect_str --execute="$get_max_list_name_char_length")
+   list_name_length=$( echo "($list_name_byte_length - $list_name_char_length) / 2 + (3 * $list_name_char_length - $list_name_byte_length) / 2 * 0.5" | bc )
    list_desc_length=$($mysql_connect_str --execute="$get_max_list_desc_length")
    echo "#topic$_topic_id li {width: ${list_name_length}em}" > $output_css/topic_$_topic_id.css
    if [ $list_desc_length -gt 1000 ]; then
