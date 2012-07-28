@@ -1,3 +1,11 @@
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_10.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_10.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_2.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_3.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_4.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_4.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_5.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_5.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_6.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_6.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_7.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_7.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_8.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_8.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/_9.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/_9.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/topic_10.css and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/topic_10.css differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/topic_11.css and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/topic_11.css differ
@@ -46,6 +54,9 @@ Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/topic_7.css an
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/topic_8.css and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/topic_8.css differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/topic_9.css and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/css/topic_9.css differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/fun/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/fun/index.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_2.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_3.html differ
+Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/music/music_4.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/music/music_4.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/index.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/index.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_2.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_2.html differ
 Files /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/mv/mv_3.html and /home/lusaisai/wwwLearning/myweb0.1/genTool/latest_html/mv/mv_3.html differ

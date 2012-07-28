@@ -38,6 +38,8 @@ cat << EOF
 <!DOCTYPE html>
 <html>
 <head>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
 <meta charset="utf-8" />
 <title>$html_title</title>
 <link rel="shortcut icon" href="$domain/favicon.ico">
@@ -398,7 +400,7 @@ function gen_topic_div_box {
    get_max_list_desc_length="select max(char_length(list_desc)) from f_topic_list where topic_id = $_topic_id;"
    list_name_byte_length=$($mysql_connect_str --execute="$get_max_list_name_byte_length")
    list_name_char_length=$($mysql_connect_str --execute="$get_max_list_name_char_length")
-   list_name_length=$( echo "(list_name_byte_length - list_name_char_length) / 2 + (3 * list_name_char_length - list_name_byte_length) / 2 * 0.5" | bc )
+   list_name_length=$( echo "($list_name_byte_length - $list_name_char_length) / 2 + (3 * $list_name_char_length - $list_name_byte_length) / 2 * 0.5 + 1" | bc )
    list_desc_length=$($mysql_connect_str --execute="$get_max_list_desc_length")
    echo "#topic$_topic_id li {width: ${list_name_length}em}" > $output_css/topic_$_topic_id.css
    if [ $list_desc_length -gt 1000 ]; then
@@ -683,6 +685,7 @@ order by 2 desc, 1 desc
 				gen_html_tail >> $output_dir/${page_dir}${page_dir%%/}_$page_index.html
 			fi
 			player_js=""
+			special_css=""
 			current_div_all=""
 			topic_id_list="-1"
 			((page_index+=1))

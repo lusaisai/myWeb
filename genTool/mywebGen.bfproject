@@ -20,9 +20,9 @@ files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 c2e.convert_iso: 0
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css
@@ -63,9 +63,9 @@ last_filefilter:
 view_main_toolbar: 1
 htmlbar_view: 1
 autoindent: 1
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5905:\tlist_name=$(echo $list_name):20706:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17428:\tgen_html_tail >> $output_dir/${page_dir:20706:
-bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4829:<a href="$domain/soccer" ><h3>$topic_nam:20706:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:5992:\tlist_name=$(echo $list_name):20793:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:17515:\tgen_html_tail >> $output_dir/${page_dir:20793:
+bmarks: ::/home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh:4916:<a href="$domain/soccer" ><h3>$topic_nam:20793:
 c2e.convert_special: 0
 editor_tab_width: 3
 view_left_panel: 1
