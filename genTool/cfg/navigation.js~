@@ -20,4 +20,17 @@ $(function() {
 )
 ;
 
+ $('#randomListen li').mousedown( function() {
+	$(this).css('box-shadow','none');
+	}
+).mouseup( function() {
+	$(this).css('box-shadow','1px 1px 2px 1px #5F9FFF');
+	}
+)
+;
+
+$('#randomListen li').click(function() {
+	$('#musicPlayer').load("randomListen.php");
+	});
+
 });

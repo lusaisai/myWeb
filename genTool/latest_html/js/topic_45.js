@@ -70,6 +70,34 @@ $('#list238').click(function() {
 	$('#topic45 li').css('color', '#000000');
 	$('#list238').css('color', '#CC0052');
 	});
+$('#list250').click(function() {
+	$('#topic45 span.listtxt').html('唱得好，女朋友也好，人生还有什么不能过的。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDM1MjA1NzUy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list250').css('color', '#CC0052');
+	});
+$('#list251').click(function() {
+	$('#topic45 span.listtxt').html('唱得真心好。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDM1MjE1MTg4/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list251').css('color', '#CC0052');
+	});
+$('#list252').click(function() {
+	$('#topic45 span.listtxt').html('又来了个小有名气的人。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDM1MjM2NTg4/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list252').css('color', '#CC0052');
+	});
+$('#list253').click(function() {
+	$('#topic45 span.listtxt').html('她的声音莫名地会让人难受。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDM1MjM3MTEy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list253').css('color', '#CC0052');
+	});
 }
 )
 ;
