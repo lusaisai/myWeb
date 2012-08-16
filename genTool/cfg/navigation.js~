@@ -36,11 +36,15 @@ $('#randomListen li').click(function() {
 var $scrollingDiv = $("#left_panel");
  
 $(window).scroll(function(){
-   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );		
+	if ( $.trim($("#searchResult").text()) == "" ) {
+   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+}
 });
 
 $(".list > li").click(function(){
+   if ( $.trim($("#searchResult").text()) == "" ) {
    $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+}
 }
 );
 
