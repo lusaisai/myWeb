@@ -34,15 +34,20 @@ $('#randomListen li').click(function() {
 	});
 
 var $scrollingDiv = $("#left_panel");
+var end = $(document).height();
  
 $(window).scroll(function(){
-	if ( $.trim($("#searchResult").text()) == "" ) {
-   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+	offset = $(window).scrollTop();
+	if ( $.trim($("#searchResult").text()) == "" && (offset + 600 <= end ) ) {
+   $scrollingDiv.stop().animate({"marginTop": offset + "px"}, "slow" );
 }
 });
 
 $(".list > li").click(function(){
-   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+	offset = $(window).scrollTop();
+	if ( $.trim($("#searchResult").text()) == "" && (offset + 600 <= end ) ) {
+   $scrollingDiv.stop().animate({"marginTop": offset + "px"}, "slow" );
+}
 }
 );
 

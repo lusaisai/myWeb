@@ -48,6 +48,7 @@ overflow: auto;
 	padding: 5px 100px;
 	text-shadow: 1px 1px 5px #ff0000;
 	margin-bottom: 50px;
+	float: right;
 }
 
 #bwBox {
@@ -120,9 +121,7 @@ canvas {
   width: 250px;
   height: 100%;
   float: left;
-  padding: 5px;
-  position: relative;
-  bottom: 5px;
+  padding: 5px
 }
 
 #musicPlayer {
