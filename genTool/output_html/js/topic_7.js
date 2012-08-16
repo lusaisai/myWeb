@@ -71,6 +71,16 @@ $('#list109').click(function() {
 	$('#topic7 li').css('color', '#000000');
 	$('#list109').css('color', '#CC0052');
 	});
+$('#list267').mouseover(function() {
+	$('#topic7 img').attr('src', 'http://img.xiami.com/images/album/img36/1836/42791343963273_2.jpg');
+	$('#topic7 span.listtxt').html('“我爱不爱你 日久见人心”，静茹声音温柔了很多啊，是不是女人结婚了，就会这样。');
+	});
+$('#list267').click(function() {
+	$('#musicPlayer h3').html('爱久见人心');
+	$('#musicPlayer embed').replaceWith('<embed src="http://www.xiami.com/widget/4097932_1771128943,1771128944,1771128942,1771128945,1771128946,1771128947,1771128948,1771128949,1771128950,1771128951,1771128952,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#topic7 li').css('color', '#000000');
+	$('#list267').css('color', '#CC0052');
+	});
 }
 )
 ;

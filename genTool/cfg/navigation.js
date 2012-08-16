@@ -33,4 +33,15 @@ $('#randomListen li').click(function() {
 	$('#musicPlayer').load("randomListen.php");
 	});
 
+var $scrollingDiv = $("#left_panel");
+ 
+$(window).scroll(function(){
+   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );		
+});
+
+$(".list > li").click(function(){
+   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+}
+);
+
 });

@@ -98,6 +98,20 @@ $('#list253').click(function() {
 	$('#topic45 li').css('color', '#000000');
 	$('#list253').css('color', '#CC0052');
 	});
+$('#list265').click(function() {
+	$('#topic45 span.listtxt').html('很喜欢这种感觉。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDM3NzA0MTc2/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list265').css('color', '#CC0052');
+	});
+$('#list266').click(function() {
+	$('#topic45 span.listtxt').html('很有气场啊。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDM3NzEwNTMy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list266').css('color', '#CC0052');
+	});
 }
 )
 ;
