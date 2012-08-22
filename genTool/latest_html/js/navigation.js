@@ -37,14 +37,16 @@ var $scrollingDiv = $("#left_panel");
 var end = $(document).height();
  
 $(window).scroll(function(){
-	if ( $.trim($("#searchResult").text()) == "" && ($("#searchResult").position().top + 300 <= end ) ) {
-   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+	offset = $(window).scrollTop();
+	if ( $.trim($("#searchResult").text()) == "" && (offset + 900 <= end ) ) {
+   $scrollingDiv.stop().animate({"marginTop": offset + "px"}, "slow" );
 }
 });
 
 $(".list > li").click(function(){
-   if ( $.trim($("#searchResult").text()) == "" && ($("#searchResult").position().top + 300 <= end ) ) {
-   $scrollingDiv.stop().animate({"marginTop": ($(window).scrollTop() + 0) + "px"}, "slow" );
+	offset = $(window).scrollTop();
+	if ( $.trim($("#searchResult").text()) == "" && (offset + 900 <= end ) ) {
+   $scrollingDiv.stop().animate({"marginTop": offset + "px"}, "slow" );
 }
 }
 );

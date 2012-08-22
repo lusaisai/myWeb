@@ -5,16 +5,22 @@
   <link>http://www.im633.com</link>
   <description>音乐，影音，足球，软件...一切值得珍藏的</description>
   <item>
-    <title>梁静茹 - 甜美的邻家女孩</title>
-    <link>http://im633.com/topics/topic_7.html</link>
-    <description>梁静茹 - 甜美的邻家女孩</description>
-    <guid>http://im633.com/topics/topic_7.html</guid>
+    <title>公主伊能静</title>
+    <link>http://im633.com/topics/topic_54.html</link>
+    <description>公主伊能静</description>
+    <guid>http://im633.com/topics/topic_54.html</guid>
   </item>
   <item>
     <title>中国好声音2012</title>
     <link>http://im633.com/topics/topic_45.html</link>
     <description>中国好声音2012</description>
     <guid>http://im633.com/topics/topic_45.html</guid>
+  </item>
+  <item>
+    <title>梁静茹 - 甜美的邻家女孩</title>
+    <link>http://im633.com/topics/topic_7.html</link>
+    <description>梁静茹 - 甜美的邻家女孩</description>
+    <guid>http://im633.com/topics/topic_7.html</guid>
   </item>
   <item>
     <title>Tata Young</title>
@@ -57,12 +63,6 @@
     <link>http://im633.com/topics/topic_47.html</link>
     <description>Trouble Maker</description>
     <guid>http://im633.com/topics/topic_47.html</guid>
-  </item>
-  <item>
-    <title>无印良品</title>
-    <link>http://im633.com/topics/topic_46.html</link>
-    <description>无印良品</description>
-    <guid>http://im633.com/topics/topic_46.html</guid>
   </item>
 </channel>
 </rss>

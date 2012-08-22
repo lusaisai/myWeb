@@ -9,6 +9,7 @@ output_dir="$gen_home_dir/output_html"
 last_dir="$gen_home_dir/latest_html"
 upload_dir="$gen_home_dir/upload_html"
 diff_result_file="$gen_home_dir/tmp/diff.txt"
+upload_zip_file="upload.tar.gz"
 
 ######################################################################
 # comparing
@@ -63,8 +64,12 @@ echo "Push new code to im633.com?(Y/y)"
 
 read x
 if [ "$x" = "y" -o "$x" = "Y" ]; then
-   ncftpput -R -v -u imsixthr im633.com /public_html $upload_dir/*
-   echo "pushed to im633.com and now copying uploaded files to the latest dir"
+   echo "Compress files..."
+   tar -zcvf $upload_zip_file *
+   echo "Scp file to im633.com and extract..."
+   scp $upload_zip_file imsixthr@im633.com:/home7/imsixthr/public_html
+   ssh imsixthr@im633.com "cd /home7/imsixthr/public_html;tar -xzf upload.tar.gz"
+   echo "Copy uploaded files to the latest dir"
 	cp -r $upload_dir/* $last_dir
 	echo "Copying done!"
 fi

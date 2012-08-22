@@ -112,6 +112,20 @@ $('#list266').click(function() {
 	$('#topic45 li').css('color', '#000000');
 	$('#list266').css('color', '#CC0052');
 	});
+$('#list268').click(function() {
+	$('#topic45 span.listtxt').html('原汁原味的小情歌，很好听。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDQwMzA1NjY4/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list268').css('color', '#CC0052');
+	});
+$('#list269').click(function() {
+	$('#topic45 span.listtxt').html('这首歌写的真好。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDQwMzE5NTYw/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list269').css('color', '#CC0052');
+	});
 }
 )
 ;

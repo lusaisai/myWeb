@@ -38,14 +38,14 @@ var end = $(document).height();
  
 $(window).scroll(function(){
 	offset = $(window).scrollTop();
-	if ( $.trim($("#searchResult").text()) == "" && (offset + 600 <= end ) ) {
+	if ( $.trim($("#searchResult").text()) == "" && (offset + 900 <= end ) ) {
    $scrollingDiv.stop().animate({"marginTop": offset + "px"}, "slow" );
 }
 });
 
 $(".list > li").click(function(){
 	offset = $(window).scrollTop();
-	if ( $.trim($("#searchResult").text()) == "" && (offset + 600 <= end ) ) {
+	if ( $.trim($("#searchResult").text()) == "" && (offset + 900 <= end ) ) {
    $scrollingDiv.stop().animate({"marginTop": offset + "px"}, "slow" );
 }
 }
