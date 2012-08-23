@@ -14,6 +14,7 @@ upload_zip_file="upload.tar.gz"
 ######################################################################
 # comparing
 ######################################################################
+mkdir -p $last_dir
 diff -rq $output_dir $last_dir > $diff_result_file
 
 
@@ -65,7 +66,7 @@ echo "Push new code to im633.com?(Y/y)"
 read x
 if [ "$x" = "y" -o "$x" = "Y" ]; then
    echo "Compress files..."
-   tar -zcvf $upload_zip_file *
+   tar -zcf $upload_zip_file *
    echo "Scp file to im633.com and extract..."
    scp $upload_zip_file imsixthr@im633.com:/home7/imsixthr/public_html
    ssh imsixthr@im633.com "cd /home7/imsixthr/public_html;tar -xzf upload.tar.gz"

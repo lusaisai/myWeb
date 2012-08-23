@@ -50,22 +50,23 @@ htmlbar_notebooktab: 0
 last_filefilter: 
 spell_insert_entities: 0
 spell_check_default: 1
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
+files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/search_keyword.js
 snr_replacetype: 0
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/search_keyword.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/search_keyword.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/search_keyword.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php/getListDesc.php
@@ -92,7 +93,7 @@ snr_casesens: 0
 c2e.convert_iso: 0
 bookmarks_filename_mode: 0
 wrap_text_default: 0
-opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
+opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
 e2c.convert_xml: 1
 default_mime_type: text/x-sh
 view_left_panel: 1

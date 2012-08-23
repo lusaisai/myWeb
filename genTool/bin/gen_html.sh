@@ -477,6 +477,11 @@ limit 1
 "
 	get_latest_list_query_using_topic_id="select
 l.list_outer_link
+from f_topic_list l
+join 
+(
+select
+t.topic_id
 from f_topic t
 join d_topic_type d
 on   t.topic_type_id = d.topic_type_id
@@ -484,9 +489,14 @@ join f_topic_list l
 on   t.topic_id = l.topic_id
 where d.topic_type_desc in ( '音乐', '博客')
 and t.topic_id in ( $_topic_id_list )
-order by t.modified_ts desc, t.topic_id desc, l.list_id
+order by l.modified_ts desc
 limit 1
-;"
+) as tmp
+on l.topic_id = tmp.topic_id
+order by l.list_id
+limit 1
+;
+"
 
 
 	default_music_loc="$($mysql_connect_str --execute="$get_latest_list_query_using_topic_id")"
@@ -533,6 +543,7 @@ EOF
 # Main Generating Processes
 ######################################################################
 echo "Copying common use files"
+mkdir -p $output_dir
 cd $output_dir
 mkdir -p blog css feed fun images js music mv others php soccer software topics
 cp $cfg_dir/*png $output_img

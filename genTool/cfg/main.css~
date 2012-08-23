@@ -171,6 +171,10 @@ ul.list li,a.pagelinks {
    list-style: none;
 }
 
+a.pagelinks {
+	padding: 2px 5px;
+}
+
 ul.list li:hover,a.pagelinks:hover {
    background-color: #85ADFF;
 }

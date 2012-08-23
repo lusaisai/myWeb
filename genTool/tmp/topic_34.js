@@ -91,6 +91,16 @@ $('#list198').click(function() {
 	$('#topic34 li').css('color', '#000000');
 	$('#list198').css('color', '#CC0052');
 	});
+$('#list271').mouseover(function() {
+	$('#topic34 img').attr('src', 'http://img.xiami.com/images/album/img40/1340/5320401343997521_2.jpg');
+	$('#topic34 span.listtxt').html('爱，让人幸福的是那一份在乎。');
+	});
+$('#list271').click(function() {
+	$('#musicPlayer h3').html('不透光');
+	$('#musicPlayer embed').replaceWith('<embed src="http://www.xiami.com/widget/4097932_1771204802,1771130236,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#topic34 li').css('color', '#000000');
+	$('#list271').css('color', '#CC0052');
+	});
 }
 )
 ;
