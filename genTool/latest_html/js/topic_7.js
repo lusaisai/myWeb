@@ -81,6 +81,16 @@ $('#list267').click(function() {
 	$('#topic7 li').css('color', '#000000');
 	$('#list267').css('color', '#CC0052');
 	});
+$('#list273').mouseover(function() {
+	$('#topic7 img').attr('src', 'http://img.xiami.com/images/album/img36/1836/2786921337304841_2.jpg');
+	$('#topic7 span.listtxt').html('2012年8月23号，今天是情人节。');
+	});
+$('#list273').click(function() {
+	$('#musicPlayer h3').html('今天情人节');
+	$('#musicPlayer embed').replaceWith('<embed src="http://www.xiami.com/widget/4097932_3133036,3133037,3133038,3133039,3133040,3133041,3133042,3133043,3133044,3133045,3133046,3133047,3133048,3133049,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#topic7 li').css('color', '#000000');
+	$('#list273').css('color', '#CC0052');
+	});
 }
 )
 ;

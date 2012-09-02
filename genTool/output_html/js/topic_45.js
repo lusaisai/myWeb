@@ -126,6 +126,41 @@ $('#list269').click(function() {
 	$('#topic45 li').css('color', '#000000');
 	$('#list269').css('color', '#CC0052');
 	});
+$('#list275').click(function() {
+	$('#topic45 span.listtxt').html('她太happy了，感觉超好。20岁，大一，未来之星啊。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDMyNjIxNDgw/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list275').css('color', '#CC0052');
+	});
+$('#list276').click(function() {
+	$('#topic45 span.listtxt').html('太棒了，完美的二重唱啊～～～');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDQ1NDI0Mzg0/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list276').css('color', '#CC0052');
+	});
+$('#list277').click(function() {
+	$('#topic45 span.listtxt').html('哈林好强啊，这编排的。。。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDQ1NDM5MTA0/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list277').css('color', '#CC0052');
+	});
+$('#list278').click(function() {
+	$('#topic45 span.listtxt').html('那一句 “任凭风暴漩涡～～～” 好好听。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDQ1NDMxMTky/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list278').css('color', '#CC0052');
+	});
+$('#list279').click(function() {
+	$('#topic45 span.listtxt').html('真是太有个性了。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDQ1NDYyNDcy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list279').css('color', '#CC0052');
+	});
 }
 )
 ;
