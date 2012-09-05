@@ -1,3 +1,4 @@
+59	雪
 58	Carly Rae Jepsen - Call Me Maybe
 57	Jayesslee - Price Tag
 45	中国好声音2012
@@ -7,4 +8,3 @@
 34	庆幸拥有蔡淳佳
 54	公主伊能静
 53	Tata Young
-52	李健

@@ -77,12 +77,12 @@ if [ "$x" = "y" -o "$x" = "Y" ]; then
    gzip -f $sql_file
    echo "Scp file to im633.com and load..."
    scp $sql_file.gz imsixthr@im633.com:/home7/imsixthr/public_html
-   ssh imsixthr@im633.com "cd /home7/imsixthr/public_html;gunzip -f ${sql_file##*/}.gz; mysql --database=imsixthr_myweb01 -u imsixthr_myweb -pimsixthr_myweb < ${sql_file##*/}"
+   ssh imsixthr@im633.com "cd /home7/imsixthr/public_html;gunzip -f ${sql_file##*/}.gz; mysql --database=imsixthr_myweb01 -u imsixthr_myweb -pimsixthr_myweb --default-character-set=utf8 < ${sql_file##*/}"
+   ######################################################################
+   # Update last extract value
+   ######################################################################
+   echo "Complete and updated the last extract value"
+   date +'%F %R:%S' > $last_extract_file
 fi
 
 
-######################################################################
-# Update last extract value
-######################################################################
-echo "Complete and updated the last extract value"
-date +'%F %R:%S' > $last_extract_file
