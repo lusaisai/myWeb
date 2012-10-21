@@ -73,6 +73,8 @@ if [ "$x" = "y" -o "$x" = "Y" ]; then
    echo "Copy uploaded files to the latest dir"
 	cp -r $upload_dir/* $last_dir
 	echo "Copying done!"
+	echo "Generating List<-->Music ids"
+   $gen_home_dir/bin/get_list_music_id_map.sh
 fi
 
 
