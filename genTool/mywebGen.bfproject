@@ -50,22 +50,18 @@ htmlbar_notebooktab: 0
 last_filefilter: 
 spell_insert_entities: 0
 spell_check_default: 1
-savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin
-files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
-files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
+savedir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js
 files: /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html
-files: /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js
-files: /home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
-files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/search_keyword.js
-files: /home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
+files: /home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/topic_45.js
 snr_replacetype: 0
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/topic_45.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/index.html
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/gen_html.sh
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/navigation.js
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/navigation.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/search_keyword.js
+recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/compare_upload.sh
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/css/main.css
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js/search_keyword.js
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/bin/add_topic_list.sh
@@ -73,7 +69,6 @@ recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg/searching.p
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php/getListDesc.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php/getPoem.php
 recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/php/searching.php
-recent_files: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/randomListen.php
 charmap_block: 1
 e2c.convert_iso: 0
 enable_syntax_scan: 1
@@ -94,7 +89,7 @@ snr_casesens: 0
 c2e.convert_iso: 0
 bookmarks_filename_mode: 0
 wrap_text_default: 0
-opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/cfg
+opendir: file:///home/lusaisai/wwwLearning/myweb0.1/genTool/output_html/js
 e2c.convert_xml: 1
 default_mime_type: text/x-sh
 view_left_panel: 1

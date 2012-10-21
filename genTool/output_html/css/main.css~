@@ -48,7 +48,6 @@ overflow: auto;
 	padding: 5px 100px;
 	text-shadow: 1px 1px 5px #ff0000;
 	margin-bottom: 50px;
-	float: right;
 }
 
 #bwBox {
@@ -124,16 +123,14 @@ canvas {
   padding: 5px
 }
 
-#musicPlayer {
-    height: 380px;
-    margin: 0px;
-    padding: 0px;
-}
-
 #musicPlayer embed{
     width: 250px;
     height: 320px;
     overflow: hidden;
+}
+
+#musicPlayer {
+    height: 380px;
 }
 
 #topicBox {
@@ -170,10 +167,6 @@ ul.list li,a.pagelinks {
    cursor: pointer;
    box-shadow: 1px 1px 2px 1px #5F9FFF;
    list-style: none;
-}
-
-a.pagelinks {
-	padding: 2px 5px;
 }
 
 ul.list li:hover,a.pagelinks:hover {
@@ -229,7 +222,10 @@ ul#randomListen li {
    display: inline-block;
    padding: 5px 10px 6px;
    color: #fff;
-   border-radius: 6px;
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
    box-shadow: 1px 1px 2px 1px #5F9FFF;
    border-bottom: 1px solid rgba(0,0,0,0.25);
@@ -242,5 +238,6 @@ ul#randomListen li {
 ul#randomListen li:hover {
 	background-color: #2981e4;
 }
+
 
 

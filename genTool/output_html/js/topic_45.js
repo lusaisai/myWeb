@@ -161,6 +161,55 @@ $('#list279').click(function() {
 	$('#topic45 li').css('color', '#000000');
 	$('#list279').css('color', '#CC0052');
 	});
+$('#list287').click(function() {
+	$('#topic45 span.listtxt').html('很妖很好听。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDUwNDU0ODI0/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list287').css('color', '#CC0052');
+	});
+$('#list288').click(function() {
+	$('#topic45 span.listtxt').html('好声音里我最喜欢的哥们，唱歌好有感情。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDUwNDUwMDEy/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list288').css('color', '#CC0052');
+	});
+$('#list289').click(function() {
+	$('#topic45 span.listtxt').html('超赞！');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDUwNDQ3MzQ4/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list289').css('color', '#CC0052');
+	});
+$('#list304').click(function() {
+	$('#topic45 span.listtxt').html('旁边的小熊好棒');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDUzMjE5NzAw/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list304').css('color', '#CC0052');
+	});
+$('#list305').click(function() {
+	$('#topic45 span.listtxt').html('声音一出来，就想哭。');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDU1ODM3NjY0/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list305').css('color', '#CC0052');
+	});
+$('#list306').click(function() {
+	$('#topic45 span.listtxt').html('唯美，好听~');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDU2MjIwMjE2/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list306').css('color', '#CC0052');
+	});
+$('#list307').click(function() {
+	$('#topic45 span.listtxt').html('喜欢，很有感觉~');
+	$('#topic45 embed').wrap('<div class="videoWrapper" />');
+	$('#topic45 embed').replaceWith('<embed allowFullscreen="true" src="http://player.youku.com/player.php/sid/XNDU2MjI3MTc2/v.swf" quality="high" width="680" height="480" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>');
+	$('#topic45 li').css('color', '#000000');
+	$('#list307').css('color', '#CC0052');
+	});
 }
 )
 ;

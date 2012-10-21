@@ -22,6 +22,7 @@ body {
     padding: 10px;
     color: #333333;
     background-image: url('../images/bg.png');
+    font-family: 'ubuntu mono',微软雅黑,宋体;
 }
 
 div#main {
