@@ -62,24 +62,27 @@ do
 	echo "insert into stg_f_topic_list_w select " "$list_id, " "$topic_id, " "'$list_name', " "'$list_desc', " "'$list_image_loc', " "'$list_outer_link', " "'$list_other_link', " "'$modified_ts'" " from dual;" >> $sql_file
 done < $etl_tmp_dir/f_topic_list.txt
 
+echo "call topic_list_ups;" >> $sql_file
+
+
+
 ######################################################################
-# Update last extract value
+# Push to bluehost and copy the uploaded files to the latest dir
 ######################################################################
-echo "Complete!
-Update the last extract value?(Y/y)"
+echo "Push new data to im633.com?(Y/y)"
+
 read x
 if [ "$x" = "y" -o "$x" = "Y" ]; then
-	date +'%F %R:%S' > $last_extract_file
-	echo "Updated!"
+   echo "Compress files..."
+   gzip -f $sql_file
+   echo "Scp file to im633.com and load..."
+   scp $sql_file.gz imsixthr@im633.com:/home7/imsixthr/public_html
+   ssh imsixthr@im633.com "cd /home7/imsixthr/public_html;gunzip -f ${sql_file##*/}.gz; mysql --database=imsixthr_myweb01 -u imsixthr_myweb -pimsixthr_myweb --default-character-set=utf8 < ${sql_file##*/}"
+   ######################################################################
+   # Update last extract value
+   ######################################################################
+   echo "Complete and updated the last extract value"
+   date +'%F %R:%S' > $last_extract_file
 fi
 
-
-
-######################################################################
-# compress
-######################################################################
-rm $sql_file.gz
-gzip $sql_file
-
-echo "Please import file $sql_file.gz and run \"call topic_list_ups\" to upsert."
 

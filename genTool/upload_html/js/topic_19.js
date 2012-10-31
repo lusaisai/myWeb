@@ -71,6 +71,16 @@ $('#list150').click(function() {
 	$('#topic19 li').css('color', '#000000');
 	$('#list150').css('color', '#CC0052');
 	});
+$('#list314').mouseover(function() {
+	$('#topic19 img').attr('src', 'http://img.xiami.com/images/album/img17/23517/5161021340071211_2.jpg');
+	$('#topic19 span.listtxt').html('听听《浪费》吧，用 一生 去爱 一个人。');
+	});
+$('#list314').click(function() {
+	$('#musicPlayer h3').html('大小说家');
+	$('#musicPlayer embed').replaceWith('<embed src="http://www.xiami.com/widget/4097932_1770990303,1771093939,1771093940,1771093941,1771039797,1771093943,1771093944,1771093945,1771093946,1771093947,1771113009,1771113010,1771113011,1771113012,1771113013,_235_346_000000_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>');
+	$('#topic19 li').css('color', '#000000');
+	$('#list314').css('color', '#CC0052');
+	});
 }
 )
 ;

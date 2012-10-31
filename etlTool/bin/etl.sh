@@ -62,6 +62,24 @@ do
 	echo "insert into stg_f_topic_list_w select " "$list_id, " "$topic_id, " "'$list_name', " "'$list_desc', " "'$list_image_loc', " "'$list_outer_link', " "'$list_other_link', " "'$modified_ts'" " from dual;" >> $sql_file
 done < $etl_tmp_dir/f_topic_list.txt
 
+######################################################################
+# f_poem
+######################################################################
+get_data_query="select concat_ws(0x07,poem_id,poem_content,COALESCE(poet, ''),modified_ts) from f_poem;";
+
+echo "delete from f_poem;" >> $sql_file
+
+$mysql_connect_str --execute="$get_data_query" | sed s/\'/\'\'/g > $etl_tmp_dir/f_poem.txt
+
+while read _line
+do
+	poem_id=$(echo $_line | awk -F"\007" '{print $1}')
+	poem_content="$(echo $_line | awk -F"\007" '{print $2}')"
+	poet="$(echo $_line | awk -F"\007" '{print $3}')"
+	modified_ts="$(echo $_line | awk -F"\007" '{print $4}')"
+	echo "insert into f_poem select " "$poem_id, " "'$poem_content', " "'$poet', " "'$modified_ts'" " from dual;" >> $sql_file
+done < $etl_tmp_dir/f_poem.txt
+
 echo "call topic_list_ups;" >> $sql_file
 
 

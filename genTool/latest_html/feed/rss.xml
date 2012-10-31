@@ -5,6 +5,12 @@
   <link>http://www.im633.com</link>
   <description>音乐，影音，足球，软件...一切值得珍藏的</description>
   <item>
+    <title>迷幻宥嘉</title>
+    <link>http://im633.com/topics/topic_19.html</link>
+    <description>迷幻宥嘉</description>
+    <guid>http://im633.com/topics/topic_19.html</guid>
+  </item>
+  <item>
     <title>欧美金唱盘</title>
     <link>http://im633.com/topics/topic_68.html</link>
     <description>欧美金唱盘</description>
@@ -57,12 +63,6 @@
     <link>http://im633.com/topics/topic_61.html</link>
     <description>妈妈咪呀原声</description>
     <guid>http://im633.com/topics/topic_61.html</guid>
-  </item>
-  <item>
-    <title>爱的回归线</title>
-    <link>http://im633.com/topics/topic_60.html</link>
-    <description>爱的回归线</description>
-    <guid>http://im633.com/topics/topic_60.html</guid>
   </item>
 </channel>
 </rss>
